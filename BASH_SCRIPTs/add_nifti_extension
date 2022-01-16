@@ -1,0 +1,23 @@
+#! /bin/bash
+
+srpbs_dir=/home/nikin/Functional-Connectivity/Alaka_Ma\'am_Data.bak/SRPBS_OPEN
+
+clear
+
+if [[ -d "${srpbs_dir}" ]]
+then
+    cd ${srpbs_dir}
+    for directory in $(ls -d */) ; do
+        cd $directory
+        for subject in $(ls -d */) ; do
+            pushd ${subject}/rsfmri/
+            for file in $(ls) ; do
+                if [[ -f $file ]] ; then
+                    mv "$file" "$(basename "$file").nii"
+                fi
+            done
+            popd
+        done
+        cd ..
+    done
+fi
