@@ -9,3 +9,8 @@
 - File names beginning with an 'r' such as 'rc1' or 'rc2' are the
   DARTEL imported versions of the tissue class images which will be
   aligned together to create a template.
+
+## The files created in the Template creation
+
+- Template 0 through 6 were created
+- urc1 files were created for each subject.
