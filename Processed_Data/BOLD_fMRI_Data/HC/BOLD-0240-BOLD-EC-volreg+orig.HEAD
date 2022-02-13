@@ -1,0 +1,1933 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 332
+'[nikin@leviathan: Sun Feb 13 12:28:55 2022] {AFNI_22.0.03:linux_openmp_64} 3dDespike -prefix BOLD-0240-BOLD-EC BOLD-0240-BOLD-EC1+orig\n[nikin@leviathan: Sun Feb 13 12:29:08 2022] {AFNI_22.0.03:linux_openmp_64} 3dvolreg -verbose -tshift 0 -base 20 -1Dfile outliers-BOLD-EC.1D -prefix BOLD-0240-BOLD-EC-volreg BOLD-0240-BOLD-EC+orig~
+
+type = string-attribute
+name = VOLREG_INPUT_IDCODE
+count = 27
+'XYZ_EXG-jpYtM0sUBFHTIQLpEg~
+
+type = string-attribute
+name = VOLREG_INPUT_NAME
+count = 30
+'./BOLD-0240-BOLD-EC+orig.HEAD~
+
+type  = float-attribute
+name  = VOLREG_CENTER_OLD
+count = 3
+      -3.595093      -30.18179       10.60907
+
+type = string-attribute
+name = VOLREG_BASE_IDCODE
+count = 27
+'XYZ_EXG-jpYtM0sUBFHTIQLpEg~
+
+type = string-attribute
+name = VOLREG_BASE_NAME
+count = 30
+'./BOLD-0240-BOLD-EC+orig.HEAD~
+
+type  = float-attribute
+name  = VOLREG_CENTER_BASE
+count = 3
+      -3.595093      -30.18179       10.60907
+
+type = integer-attribute
+name = VOLREG_ROTCOM_NUM
+count = 1
+ 138
+
+type = string-attribute
+name = VOLREG_ROTCOM_000000
+count = 66
+'-rotate 0.0001I -0.1731R 0.0502A -ashift -0.0732S 0.0254L 0.0903P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000000
+count = 12
+      0.9999996  -3.536225e-06   0.0008757529     0.02541457   8.899312e-07
+      0.9999954    0.003021718      0.0902985  -0.0008757596   -0.003021716
+      0.9999951    -0.07317598
+
+type = string-attribute
+name = VOLREG_ROTCOM_000001
+count = 67
+'-rotate -0.0175I -0.1572R 0.0524A -ashift -0.0988S 0.0163L 0.1353P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000001
+count = 12
+      0.9999995   0.0003030951   0.0009148337     0.01627027  -0.0003056033
+      0.9999962    0.002742897      0.1352821  -0.0009139989   -0.002743176
+      0.9999958    -0.09883627
+
+type = string-attribute
+name = VOLREG_ROTCOM_000002
+count = 67
+'-rotate -0.0071I -0.1693R 0.0521A -ashift -0.0852S 0.0166L 0.1820P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000002
+count = 12
+      0.9999996   0.0001212607   0.0009099557     0.01661837  -0.0001239487
+      0.9999956    0.002954497      0.1819982  -0.0009095935   -0.002954608
+      0.9999952    -0.08516154
+
+type = string-attribute
+name = VOLREG_ROTCOM_000003
+count = 67
+'-rotate 0.0047I -0.1156R 0.0040A -ashift -0.1706S -0.0061L 0.0847P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000003
+count = 12
+              1  -8.220027e-05   6.927645e-05   -0.006133194   8.206031e-05
+       0.999998    0.002017862     0.08474463  -6.944218e-05   -0.002017856
+       0.999998     -0.1706201
+
+type = string-attribute
+name = VOLREG_ROTCOM_000004
+count = 67
+'-rotate 0.0317I -0.0692R 0.0158A -ashift -0.1295S -0.0036L 0.0748P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000004
+count = 12
+      0.9999998   -0.000553552   0.0002765892   -0.003601566   0.0005532173
+      0.9999991    0.001208596     0.07482011  -0.0002772579   -0.001208443
+      0.9999992     -0.1294786
+
+type = string-attribute
+name = VOLREG_ROTCOM_000005
+count = 67
+'-rotate 0.0039I -0.0549R 0.0333A -ashift -0.0896S -0.0006L 0.1706P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000005
+count = 12
+      0.9999998  -6.865948e-05    0.000581716  -0.0006167829   6.810164e-05
+      0.9999995   0.0009589213      0.1705686  -0.0005817816  -0.0009588816
+      0.9999993    -0.08959091
+
+type = string-attribute
+name = VOLREG_ROTCOM_000006
+count = 66
+'-rotate 0.0065I -0.0686R 0.0339A -ashift -0.0634S 0.0081L 0.0992P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000006
+count = 12
+      0.9999998   -0.000113756   0.0005908806    0.008082156   0.0001130486
+      0.9999993    0.001197132     0.09923746  -0.0005910164   -0.001197065
+      0.9999991    -0.06337509
+
+type = string-attribute
+name = VOLREG_ROTCOM_000007
+count = 67
+'-rotate -0.0030I -0.0463R 0.0365A -ashift -0.0526S 0.0099L 0.1221P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000007
+count = 12
+      0.9999998    5.26913e-05   0.0006367601    0.009922042  -5.320579e-05
+      0.9999996   0.0008080043      0.1220897  -0.0006367173   -0.000808038
+      0.9999995    -0.05258639
+
+type = string-attribute
+name = VOLREG_ROTCOM_000008
+count = 67
+'-rotate -0.0043I -0.0532R 0.0292A -ashift -0.0242S 0.0102L 0.1787P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000008
+count = 12
+      0.9999999   7.487119e-05   0.0005102888     0.01022268  -7.534471e-05
+      0.9999996   0.0009279887      0.1787209  -0.0005102191  -0.0009280271
+      0.9999995    -0.02424664
+
+type = string-attribute
+name = VOLREG_ROTCOM_000009
+count = 66
+'-rotate 0.0069I -0.0297R 0.0240A -ashift -0.0550S 0.0151L 0.0798P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000009
+count = 12
+      0.9999999  -0.0001204547   0.0004188651      0.0150906   0.0001202379
+      0.9999999   0.0005175042     0.07978718  -0.0004189273  -0.0005174538
+      0.9999998    -0.05501742
+
+type = string-attribute
+name = VOLREG_ROTCOM_000010
+count = 65
+'-rotate 0.0044I 0.0028R 0.0162A -ashift -0.0326S 0.0135L 0.1461P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000010
+count = 12
+      0.9999999  -7.634594e-05   0.0002824572     0.01354749    7.63598e-05
+              1  -4.903942e-05      0.1461004  -0.0002824535   4.906098e-05
+      0.9999999    -0.03261441
+
+type = string-attribute
+name = VOLREG_ROTCOM_000011
+count = 65
+'-rotate 0.0064I 0.0017R 0.0132A -ashift -0.0538S 0.0164L 0.0969P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000011
+count = 12
+      0.9999999   -0.000111514   0.0002301819     0.01640531   0.0001115208
+              1  -2.954081e-05     0.09689076  -0.0002301786   2.956648e-05
+              1    -0.05380608
+
+type = string-attribute
+name = VOLREG_ROTCOM_000012
+count = 67
+'-rotate -0.0126I -0.0148R 0.0065A -ashift -0.0650S 0.0054L 0.1635P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000012
+count = 12
+      0.9999999   0.0002206351   0.0001136955    0.005409566  -0.0002206645
+      0.9999999    0.000258382      0.1635305  -0.0001136384  -0.0002584071
+      0.9999999     -0.0649854
+
+type = string-attribute
+name = VOLREG_ROTCOM_000013
+count = 67
+'-rotate -0.0130I -0.0235R 0.0073A -ashift -0.0563S 0.0059L 0.0821P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000013
+count = 12
+      0.9999999    0.000227191    0.000127239    0.005908702  -0.0002272433
+      0.9999999   0.0004106421      0.0820848  -0.0001271457   -0.000410671
+      0.9999999    -0.05631834
+
+type = string-attribute
+name = VOLREG_ROTCOM_000014
+count = 69
+'-rotate -0.0171I -0.0135R -0.0022A -ashift -0.0642S -0.0059L 0.1279P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000014
+count = 12
+      0.9999999   0.0002990224  -3.913174e-05   -0.005877452  -0.0002990131
+      0.9999999   0.0002363729      0.1278976   3.920242e-05  -0.0002363612
+              1    -0.06421397
+
+type = string-attribute
+name = VOLREG_ROTCOM_000015
+count = 69
+'-rotate -0.0080I -0.0333R -0.0044A -ashift -0.0435S -0.0029L 0.0664P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000015
+count = 12
+              1   0.0001394507   -7.73615e-05   -0.002891022  -0.0001394057
+      0.9999998   0.0005805538     0.06643974   7.744244e-05   -0.000580543
+      0.9999998    -0.04351029
+
+type = string-attribute
+name = VOLREG_ROTCOM_000016
+count = 69
+'-rotate -0.0081I -0.0155R -0.0057A -ashift -0.0640S -0.0070L 0.0846P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000016
+count = 12
+              1   0.0001418991  -9.953854e-05   -0.007022035  -0.0001418722
+      0.9999999   0.0002699382     0.08458246   9.957684e-05  -0.0002699241
+      0.9999999    -0.06395692
+
+type = string-attribute
+name = VOLREG_ROTCOM_000017
+count = 69
+'-rotate -0.0017I -0.0260R -0.0052A -ashift -0.0333S -0.0071L 0.1180P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000017
+count = 12
+              1   3.044259e-05  -9.147341e-05   -0.007127366  -3.040109e-05
+      0.9999999   0.0004536467      0.1180434   9.148721e-05  -0.0004536439
+      0.9999999    -0.03326818
+
+type = string-attribute
+name = VOLREG_ROTCOM_000018
+count = 67
+'-rotate -0.0041I -0.0125R 0.0007A -ashift -0.0407S 0.0013L 0.0257P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000018
+count = 12
+              1   7.230995e-05   1.146146e-05    0.001306445  -7.231245e-05
+              1   0.0002183254     0.02568803  -1.144567e-05  -0.0002183263
+              1    -0.04074673
+
+type = string-attribute
+name = VOLREG_ROTCOM_000019
+count = 67
+'-rotate -0.0118I 0.0032R 0.0001A -ashift -0.0125S -0.0047L 0.1049P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000019
+count = 12
+              1   0.0002050922   1.516299e-06   -0.004749774  -0.0002050922
+              1  -5.654029e-05      0.1048764  -1.527895e-06   5.653998e-05
+              1    -0.01250958
+
+type = string-attribute
+name = VOLREG_ROTCOM_000020
+count = 67
+'-rotate -0.0000I -0.0000R 0.0000A -ashift 0.0000S 0.0000L -0.0000P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000020
+count = 12
+              1              0              0              0              0
+              1              0             -0              0              0
+              1              0
+
+type = string-attribute
+name = VOLREG_ROTCOM_000021
+count = 67
+'-rotate -0.0017I 0.0008R 0.0061A -ashift -0.0307S -0.0094L 0.0526P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000021
+count = 12
+              1   3.003181e-05   0.0001056526   -0.009383546  -3.003025e-05
+              1  -1.471403e-05     0.05263783   -0.000105653   1.471086e-05
+              1    -0.03071712
+
+type = string-attribute
+name = VOLREG_ROTCOM_000022
+count = 66
+'-rotate 0.0145I -0.0149R 0.0092A -ashift -0.0265S 0.0018L 0.0601P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000022
+count = 12
+      0.9999999  -0.0002535557   0.0001612617    0.001789583   0.0002535137
+      0.9999999   0.0002601367     0.06006908  -0.0001613277  -0.0002600958
+      0.9999999     -0.0264626
+
+type = string-attribute
+name = VOLREG_ROTCOM_000023
+count = 66
+'-rotate 0.0086I 0.0238R 0.0079A -ashift -0.0573S -0.0004L 0.0785P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000023
+count = 12
+              1  -0.0001500902   0.0001383479  -0.0004210853   0.0001501476
+      0.9999999  -0.0004150564     0.07847039  -0.0001382856   0.0004150772
+      0.9999999    -0.05725228
+
+type = string-attribute
+name = VOLREG_ROTCOM_000024
+count = 65
+'-rotate 0.0200I 0.0005R 0.0061A -ashift 0.0116S 0.0092L -0.0145P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000024
+count = 12
+      0.9999999  -0.0003494764   0.0001058962     0.00924921   0.0003494773
+      0.9999999  -8.400691e-06    -0.01452027  -0.0001058933   8.437699e-06
+              1     0.01160753
+
+type = string-attribute
+name = VOLREG_ROTCOM_000025
+count = 64
+'-rotate 0.0079I 0.0336R 0.0004A -ashift 0.0055S 0.0032L 0.0655P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000025
+count = 12
+              1  -0.0001380529    6.66374e-06    0.003173494   0.0001380568
+      0.9999998    -0.00058679     0.06551057  -6.582731e-06   0.0005867909
+      0.9999998    0.005518822
+
+type = string-attribute
+name = VOLREG_ROTCOM_000026
+count = 64
+'-rotate 0.0172I 0.0085R 0.0041A -ashift 0.0334S 0.0114L 0.0094P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000026
+count = 12
+      0.9999999  -0.0003007257   7.161106e-05     0.01144097   0.0003007363
+      0.9999999  -0.0001484767    0.009409958  -7.156641e-05   0.0001484982
+              1     0.03336203
+
+type = string-attribute
+name = VOLREG_ROTCOM_000027
+count = 65
+'-rotate 0.0147I 0.0255R 0.0051A -ashift 0.0123S 0.0045L -0.0150P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000027
+count = 12
+      0.9999999   -0.000257349   8.971945e-05    0.004474274   0.0002573889
+      0.9999999  -0.0004454874    -0.01502808  -8.960479e-05   0.0004455105
+      0.9999999     0.01227359
+
+type = string-attribute
+name = VOLREG_ROTCOM_000028
+count = 64
+'-rotate 0.0099I 0.0160R 0.0009A -ashift 0.0363S 0.0047L 0.0494P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000028
+count = 12
+              1  -0.0001722957    1.64968e-05    0.004715096   0.0001723003
+      0.9999999  -0.0002788367     0.04937733  -1.644876e-05   0.0002788396
+      0.9999999      0.0363385
+
+type = string-attribute
+name = VOLREG_ROTCOM_000029
+count = 66
+'-rotate 0.0075I 0.0193R -0.0009A -ashift 0.0527S 0.0051L -0.0546P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000029
+count = 12
+              1  -0.0001309475  -1.595881e-05    0.005115971   0.0001309421
+      0.9999999  -0.0003365768    -0.05456911   1.600289e-05   0.0003365747
+      0.9999999     0.05272328
+
+type = string-attribute
+name = VOLREG_ROTCOM_000030
+count = 66
+'-rotate 0.0144I 0.0264R -0.0053A -ashift 0.0495S 0.0027L -0.0101P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000030
+count = 12
+      0.9999999  -0.0002519682  -9.242025e-05    0.002677002   0.0002519256
+      0.9999999  -0.0004603893    -0.01012541   9.253624e-05    0.000460366
+      0.9999999     0.04951843
+
+type = string-attribute
+name = VOLREG_ROTCOM_000031
+count = 65
+'-rotate 0.0089I 0.0092R -0.0086A -ashift 0.0556S 0.0033L 0.0103P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000031
+count = 12
+              1  -0.0001555532  -0.0001498399    0.003309088   0.0001555292
+              1  -0.0001598232     0.01026787   0.0001498648   0.0001597999
+              1     0.05562468
+
+type = string-attribute
+name = VOLREG_ROTCOM_000032
+count = 67
+'-rotate 0.0044I 0.0348R -0.0005A -ashift 0.0326S -0.0005L -0.0696P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000032
+count = 12
+              1   -7.61774e-05  -8.572983e-06  -0.0005279843   7.617218e-05
+      0.9999998  -0.0006067633    -0.06960718   8.619204e-06   0.0006067627
+      0.9999998     0.03262712
+
+type = string-attribute
+name = VOLREG_ROTCOM_000033
+count = 66
+'-rotate -0.0063I 0.0326R 0.0041A -ashift 0.0381S -0.0047L 0.0216P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000033
+count = 12
+              1   0.0001104494   7.169952e-05    -0.00470344  -0.0001104087
+      0.9999998   -0.000568136     0.02159387  -7.176226e-05   0.0005681281
+      0.9999998     0.03807057
+
+type = string-attribute
+name = VOLREG_ROTCOM_000034
+count = 67
+'-rotate -0.0002I 0.0262R 0.0060A -ashift 0.0547S -0.0055L -0.0536P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000034
+count = 12
+              1   2.860068e-06   0.0001053349   -0.005513758  -2.811956e-06
+      0.9999999   -0.000456753    -0.05355763  -0.0001053362   0.0004567527
+      0.9999999     0.05473438
+
+type = string-attribute
+name = VOLREG_ROTCOM_000035
+count = 65
+'-rotate 0.0045I 0.0373R 0.0100A -ashift 0.0469S -0.0094L 0.0252P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000035
+count = 12
+              1  -7.867109e-05   0.0001751034   -0.009390051   7.878512e-05
+      0.9999998  -0.0006513759     0.02521933  -0.0001750521   0.0006513897
+      0.9999998     0.04694122
+
+type = string-attribute
+name = VOLREG_ROTCOM_000036
+count = 66
+'-rotate 0.0066I 0.0422R 0.0040A -ashift 0.0535S -0.0042L -0.0362P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000036
+count = 12
+              1  -0.0001149384   6.906981e-05   -0.004172248   0.0001149893
+      0.9999997   -0.000737078    -0.03617054  -6.898506e-05   0.0007370859
+      0.9999997      0.0534969
+
+type = string-attribute
+name = VOLREG_ROTCOM_000037
+count = 65
+'-rotate 0.0038I 0.0626R 0.0186A -ashift 0.0115S -0.0083L 0.0192P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000037
+count = 12
+      0.9999999  -6.650484e-05   0.0003245554   -0.008320292   6.685952e-05
+      0.9999994   -0.001092974     0.01917511  -0.0003244825    0.001092995
+      0.9999993     0.01153538
+
+type = string-attribute
+name = VOLREG_ROTCOM_000038
+count = 66
+'-rotate 0.0119I 0.0462R 0.0187A -ashift 0.0357S -0.0011L -0.0127P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000038
+count = 12
+      0.9999999  -0.0002082962   0.0003255599   -0.001051281   0.0002085587
+      0.9999996  -0.0008063913    -0.01272506  -0.0003253918   0.0008064592
+      0.9999996     0.03569402
+
+type = string-attribute
+name = VOLREG_ROTCOM_000039
+count = 66
+'-rotate 0.0060I 0.0671R 0.0206A -ashift 0.0087S -0.0037L -0.0213P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000039
+count = 12
+      0.9999999  -0.0001050754   0.0003593574   -0.003680135    0.000105496
+      0.9999993   -0.001170586    -0.02131929  -0.0003592342    0.001170623
+      0.9999992    0.008688391
+
+type = string-attribute
+name = VOLREG_ROTCOM_000040
+count = 65
+'-rotate 0.0063I 0.0603R 0.0162A -ashift 0.0508S -0.0022L 0.0431P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000040
+count = 12
+      0.9999999  -0.0001100933   0.0002829627   -0.002190591    0.000110391
+      0.9999995   -0.001052208     0.04314641  -0.0002828467    0.001052239
+      0.9999994     0.05076557
+
+type = string-attribute
+name = VOLREG_ROTCOM_000041
+count = 66
+'-rotate -0.0008I 0.0507R 0.0169A -ashift 0.0507S 0.0010L -0.0569P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000041
+count = 12
+      0.9999999   1.400231e-05    0.000295688     0.00100266  -1.374084e-05
+      0.9999996  -0.0008842581    -0.05688883  -0.0002957002    0.000884254
+      0.9999996     0.05068516
+
+type = string-attribute
+name = VOLREG_ROTCOM_000042
+count = 66
+'-rotate -0.0027I 0.0816R 0.0153A -ashift 0.0572S -0.0002L 0.0235P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000042
+count = 12
+      0.9999999   4.797293e-05   0.0002663779  -0.0002234669  -4.759372e-05
+       0.999999   -0.001423395     0.02351155  -0.0002664459    0.001423382
+      0.9999989      0.0571879
+
+type = string-attribute
+name = VOLREG_ROTCOM_000043
+count = 65
+'-rotate 0.0043I 0.0615R 0.0136A -ashift 0.0745S 0.0066L -0.0808P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000043
+count = 12
+      0.9999999  -7.555806e-05   0.0002381908    0.006643499   7.581354e-05
+      0.9999994   -0.001072745    -0.08079878  -0.0002381096    0.001072763
+      0.9999994     0.07451026
+
+type = string-attribute
+name = VOLREG_ROTCOM_000044
+count = 65
+'-rotate 0.0038I 0.0856R 0.0154A -ashift 0.0624S -0.0005L 0.0228P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000044
+count = 12
+      0.9999999  -6.615739e-05    0.000268057  -0.0005009626   6.655796e-05
+      0.9999989   -0.001494605     0.02281361  -0.0002679578    0.001494622
+      0.9999989      0.0623667
+
+type = string-attribute
+name = VOLREG_ROTCOM_000045
+count = 65
+'-rotate 0.0021I 0.0628R 0.0113A -ashift 0.0805S 0.0005L -0.0854P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000045
+count = 12
+              1   -3.61259e-05   0.0001967789   0.0004591523   3.634149e-05
+      0.9999994   -0.001095728    -0.08543052  -0.0001967392    0.001095735
+      0.9999994     0.08046366
+
+type = string-attribute
+name = VOLREG_ROTCOM_000046
+count = 66
+'-rotate 0.0056I 0.0820R 0.0190A -ashift 0.0723S -0.0028L -0.0211P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000046
+count = 12
+      0.9999999  -9.643353e-05   0.0003316093   -0.002844215   9.690811e-05
+       0.999999   -0.001431388    -0.02112754   -0.000331471     0.00143142
+      0.9999989     0.07226869
+
+type = string-attribute
+name = VOLREG_ROTCOM_000047
+count = 66
+'-rotate 0.0063I 0.0690R 0.0121A -ashift 0.1050S -0.0016L -0.0635P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000047
+count = 12
+              1  -0.0001104815   0.0002114114   -0.001642484   0.0001107361
+      0.9999993   -0.001204552    -0.06345552  -0.0002112782    0.001204575
+      0.9999992      0.1050426
+
+type = string-attribute
+name = VOLREG_ROTCOM_000048
+count = 66
+'-rotate 0.0075I 0.0830R 0.0142A -ashift 0.0784S -0.0030L -0.0556P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000048
+count = 12
+      0.9999999  -0.0001301406   0.0002486705    -0.00299445   0.0001305007
+      0.9999989    -0.00144848    -0.05556945  -0.0002484818    0.001448512
+      0.9999989      0.0784252
+
+type = string-attribute
+name = VOLREG_ROTCOM_000049
+count = 66
+'-rotate 0.0058I 0.0957R 0.0097A -ashift 0.1066S -0.0040L -0.0127P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000049
+count = 12
+              1  -0.0001011951   0.0001685957   -0.004016132   0.0001014766
+      0.9999986   -0.001670309    -0.01265606  -0.0001684264    0.001670326
+      0.9999986      0.1065966
+
+type = string-attribute
+name = VOLREG_ROTCOM_000050
+count = 65
+'-rotate 0.0020I 0.0934R 0.0122A -ashift 0.1047S 0.0017L -0.0917P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000050
+count = 12
+              1  -3.467484e-05   0.0002126337    0.001698793    3.50216e-05
+      0.9999987   -0.001631004    -0.09169631  -0.0002125768    0.001631011
+      0.9999986       0.104698
+
+type = string-attribute
+name = VOLREG_ROTCOM_000051
+count = 67
+'-rotate -0.0080I 0.1146R 0.0161A -ashift 0.0928S -0.0072L -0.0305P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000051
+count = 12
+      0.9999999   0.0001397955    0.000280829   -0.007163924  -0.0001392335
+       0.999998   -0.002000224    -0.03052715  -0.0002811081    0.002000185
+       0.999998     0.09282623
+
+type = string-attribute
+name = VOLREG_ROTCOM_000052
+count = 65
+'-rotate 0.0059I 0.0999R 0.0120A -ashift 0.1247S 0.0005L -0.0568P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000052
+count = 12
+              1  -0.0001022571    0.000210237    0.000488871   0.0001026236
+      0.9999985   -0.001744008    -0.05680711  -0.0002100584     0.00174403
+      0.9999985      0.1247484
+
+type = string-attribute
+name = VOLREG_ROTCOM_000053
+count = 66
+'-rotate 0.0024I 0.1188R 0.0128A -ashift 0.0955S -0.0044L -0.0920P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000053
+count = 12
+              1  -4.197609e-05   0.0002225614     -0.0044471   4.243732e-05
+      0.9999979   -0.002072816    -0.09202228   -0.000222474    0.002072825
+      0.9999979     0.09549747
+
+type = string-attribute
+name = VOLREG_ROTCOM_000054
+count = 67
+'-rotate -0.0009I 0.1078R 0.0164A -ashift 0.1146S -0.0004L -0.0365P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000054
+count = 12
+      0.9999999   1.689875e-05   0.0002866894  -0.0004087753  -1.635931e-05
+      0.9999982   -0.001881493    -0.03648451  -0.0002867207    0.001881488
+      0.9999982      0.1145983
+
+type = string-attribute
+name = VOLREG_ROTCOM_000055
+count = 66
+'-rotate 0.0014I 0.1063R 0.0202A -ashift 0.1297S -0.0000L -0.1384P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000055
+count = 12
+      0.9999999  -2.455774e-05   0.0003524648  -4.121735e-06    2.52114e-05
+      0.9999983    -0.00185465       -0.13845  -0.0003524186    0.001854659
+      0.9999982      0.1297158
+
+type = string-attribute
+name = VOLREG_ROTCOM_000056
+count = 66
+'-rotate -0.0005I 0.1155R 0.0188A -ashift 0.1279S 0.0011L -0.0607P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000056
+count = 12
+      0.9999999    9.68706e-06   0.0003275692     0.00110881  -9.026699e-06
+       0.999998   -0.002015883    -0.06071535  -0.0003275881     0.00201588
+      0.9999979      0.1278885
+
+type = string-attribute
+name = VOLREG_ROTCOM_000057
+count = 65
+'-rotate 0.0048I 0.1030R 0.0158A -ashift 0.1613S 0.0034L -0.1215P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000057
+count = 12
+      0.9999999    -8.3301e-05   0.0002765314    0.003411822   8.379785e-05
+      0.9999984   -0.001797207     -0.1215114  -0.0002763813     0.00179723
+      0.9999983      0.1613037
+
+type = string-attribute
+name = VOLREG_ROTCOM_000058
+count = 66
+'-rotate -0.0020I 0.1049R 0.0149A -ashift 0.1473S 0.0015L -0.1088P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000058
+count = 12
+      0.9999999   3.483943e-05   0.0002605802    0.001517232   -3.43625e-05
+      0.9999983   -0.001830039     -0.1087553  -0.0002606435     0.00183003
+      0.9999983      0.1472566
+
+type = string-attribute
+name = VOLREG_ROTCOM_000059
+count = 65
+'-rotate 0.0056I 0.1232R 0.0183A -ashift 0.1546S 0.0010L -0.0569P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000059
+count = 12
+      0.9999999  -9.665678e-05   0.0003192827    0.001038238   9.734304e-05
+      0.9999977   -0.002150067    -0.05694504  -0.0003190742    0.002150098
+      0.9999976      0.1545867
+
+type = string-attribute
+name = VOLREG_ROTCOM_000060
+count = 65
+'-rotate 0.0071I 0.1493R 0.0166A -ashift 0.1597S 0.0050L -0.1151P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000060
+count = 12
+      0.9999999  -0.0001233721   0.0002895622    0.005044881   0.0001241261
+      0.9999966   -0.002605496     -0.1150695  -0.0002892398    0.002605532
+      0.9999965      0.1596925
+
+type = string-attribute
+name = VOLREG_ROTCOM_000061
+count = 65
+'-rotate 0.0107I 0.1715R 0.0124A -ashift 0.1645S 0.0018L -0.0334P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000061
+count = 12
+      0.9999999   -0.000185955   0.0002171184    0.001817506   0.0001866041
+      0.9999955   -0.002993077    -0.03344917  -0.0002165609    0.002993117
+      0.9999955      0.1645317
+
+type = string-attribute
+name = VOLREG_ROTCOM_000062
+count = 65
+'-rotate 0.0108I 0.1628R 0.0049A -ashift 0.1725S 0.0040L -0.1523P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000062
+count = 12
+              1  -0.0001875133   8.630262e-05    0.004027505   0.0001877578
+      0.9999959    -0.00284159     -0.1523222  -8.576943e-05    0.002841606
+      0.9999959      0.1724683
+
+type = string-attribute
+name = VOLREG_ROTCOM_000063
+count = 66
+'-rotate 0.0066I 0.1837R 0.0132A -ashift 0.1431S -0.0035L -0.0946P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000063
+count = 12
+      0.9999999  -0.0001136767   0.0002310892   -0.003517304    0.000114417
+      0.9999949   -0.003206078    -0.09464544  -0.0002307236    0.003206105
+      0.9999948      0.1430607
+
+type = string-attribute
+name = VOLREG_ROTCOM_000064
+count = 65
+'-rotate 0.0106I 0.1818R 0.0217A -ashift 0.1767S 0.0053L -0.0610P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000064
+count = 12
+      0.9999999  -0.0001837458   0.0003779353    0.005274616   0.0001849438
+      0.9999949   -0.003172157     -0.0609573  -0.0003773505    0.003172226
+      0.9999949      0.1766698
+
+type = string-attribute
+name = VOLREG_ROTCOM_000065
+count = 65
+'-rotate 0.0163I 0.1824R 0.0210A -ashift 0.1743S 0.0052L -0.1517P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000065
+count = 12
+      0.9999999  -0.0002832399   0.0003671956    0.005186268   0.0002844073
+      0.9999949   -0.003183225     -0.1516681  -0.0003662921    0.003183329
+      0.9999949      0.1743082
+
+type = string-attribute
+name = VOLREG_ROTCOM_000066
+count = 66
+'-rotate 0.0002I 0.1914R 0.0151A -ashift 0.1777S -0.0069L -0.0429P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000066
+count = 12
+      0.9999999   -1.76356e-06   0.0002630006   -0.006879623   2.642064e-06
+      0.9999944   -0.003340349    -0.04287235  -0.0002629933     0.00334035
+      0.9999944       0.177655
+
+type = string-attribute
+name = VOLREG_ROTCOM_000067
+count = 65
+'-rotate 0.0147I 0.1669R 0.0119A -ashift 0.1920S 0.0069L -0.1664P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000067
+count = 12
+      0.9999999  -0.0002557721   0.0002081597    0.006882591   0.0002563774
+      0.9999957   -0.002913248     -0.1664208  -0.0002074137    0.002913302
+      0.9999957      0.1919643
+
+type = string-attribute
+name = VOLREG_ROTCOM_000068
+count = 66
+'-rotate 0.0021I 0.1913R 0.0100A -ashift 0.1846S -0.0025L -0.0508P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000068
+count = 12
+              1  -3.597074e-05   0.0001737195    -0.00249404   3.655049e-05
+      0.9999944   -0.003338399    -0.05084707  -0.0001735984    0.003338405
+      0.9999944      0.1845946
+
+type = string-attribute
+name = VOLREG_ROTCOM_000069
+count = 65
+'-rotate 0.0028I 0.1795R 0.0118A -ashift 0.1951S 0.0006L -0.1627P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000069
+count = 12
+              1  -4.803029e-05    0.000205411   0.0005872138   4.867346e-05
+      0.9999951   -0.003132247     -0.1626965  -0.0002052596    0.003132257
+      0.9999951      0.1950781
+
+type = string-attribute
+name = VOLREG_ROTCOM_000070
+count = 65
+'-rotate 0.0073I 0.1909R 0.0219A -ashift 0.1865S 0.0011L -0.0710P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000070
+count = 12
+      0.9999999  -0.0001261151   0.0003824742    0.001141817   0.0001273887
+      0.9999945   -0.003331862    -0.07101865  -0.0003820518     0.00333191
+      0.9999944      0.1865494
+
+type = string-attribute
+name = VOLREG_ROTCOM_000071
+count = 65
+'-rotate 0.0066I 0.1771R 0.0157A -ashift 0.2266S 0.0107L -0.1450P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000071
+count = 12
+      0.9999999  -0.0001149428   0.0002736043     0.01065159   0.0001157881
+      0.9999952   -0.003091135      -0.144981  -0.0002732477    0.003091166
+      0.9999952      0.2265509
+
+type = string-attribute
+name = VOLREG_ROTCOM_000072
+count = 65
+'-rotate 0.0064I 0.1951R 0.0238A -ashift 0.2126S 0.0086L -0.1029P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000072
+count = 12
+      0.9999999  -0.0001095626   0.0004153478    0.008566079   0.0001109764
+      0.9999942   -0.003405361     -0.1028982  -0.0004149723    0.003405406
+      0.9999941      0.2126016
+
+type = string-attribute
+name = VOLREG_ROTCOM_000073
+count = 65
+'-rotate 0.0015I 0.1836R 0.0152A -ashift 0.2472S 0.0106L -0.1066P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000073
+count = 12
+      0.9999999  -2.572384e-05   0.0002645788     0.01063585   2.657167e-05
+      0.9999949    -0.00320496     -0.1065502  -0.0002644951    0.003204967
+      0.9999948      0.2471984
+
+type = string-attribute
+name = VOLREG_ROTCOM_000074
+count = 65
+'-rotate 0.0062I 0.2161R 0.0188A -ashift 0.2166S 0.0051L -0.1440P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000074
+count = 12
+      0.9999999  -0.0001076461    0.000327894    0.005148887   0.0001088822
+      0.9999929   -0.003772008     -0.1440224  -0.0003274856    0.003772044
+      0.9999928      0.2166486
+
+type = string-attribute
+name = VOLREG_ROTCOM_000075
+count = 66
+'-rotate -0.0081I 0.2001R 0.0087A -ashift 0.2281S 0.0013L -0.0905P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000075
+count = 12
+              1   0.0001424586   0.0001522386    0.001279796   -0.000141926
+      0.9999939   -0.003493035    -0.09054974  -0.0001527353    0.003493014
+      0.9999939      0.2280628
+
+type = string-attribute
+name = VOLREG_ROTCOM_000076
+count = 65
+'-rotate 0.0032I 0.1952R 0.0202A -ashift 0.2136S 0.0023L -0.1811P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000076
+count = 12
+      0.9999999  -5.528697e-05   0.0003528894    0.002325095   5.648892e-05
+      0.9999942   -0.003406931     -0.1810929  -0.0003526989    0.003406951
+      0.9999942       0.213638
+
+type = string-attribute
+name = VOLREG_ROTCOM_000077
+count = 67
+'-rotate -0.0063I 0.2018R 0.0158A -ashift 0.2024S -0.0044L -0.0953P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000077
+count = 12
+      0.9999999   0.0001103923   0.0002757584   -0.004404346  -0.0001094203
+      0.9999938   -0.003522381    -0.09532183  -0.0002761456     0.00352235
+      0.9999937      0.2024141
+
+type = string-attribute
+name = VOLREG_ROTCOM_000078
+count = 65
+'-rotate 0.0025I 0.1899R 0.0202A -ashift 0.2187S 0.0030L -0.1621P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000078
+count = 12
+      0.9999999  -4.304553e-05   0.0003532955    0.003006476   4.421631e-05
+      0.9999945   -0.003314535     -0.1620752  -0.0003531509     0.00331455
+      0.9999945      0.2187076
+
+type = string-attribute
+name = VOLREG_ROTCOM_000079
+count = 67
+'-rotate -0.0062I 0.2043R 0.0210A -ashift 0.2153S -0.0061L -0.1464P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000079
+count = 12
+      0.9999999   0.0001088309   0.0003658062   -0.006139896  -0.0001075262
+      0.9999936   -0.003564937     -0.1464084  -0.0003661919    0.003564897
+      0.9999936      0.2153294
+
+type = string-attribute
+name = VOLREG_ROTCOM_000080
+count = 67
+'-rotate -0.0067I 0.1916R 0.0208A -ashift 0.2457S -0.0051L -0.1030P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000080
+count = 12
+      0.9999999    0.000117828   0.0003630572   -0.005092223  -0.0001166132
+      0.9999944   -0.003344329     -0.1030473  -0.0003634492    0.003344286
+      0.9999943      0.2457297
+
+type = string-attribute
+name = VOLREG_ROTCOM_000081
+count = 67
+'-rotate -0.0024I 0.1996R 0.0180A -ashift 0.2492S -0.0043L -0.1746P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000081
+count = 12
+      0.9999999   4.241895e-05    0.000313446   -0.004326427  -4.132693e-05
+      0.9999939   -0.003483122     -0.1746485  -0.0003135919    0.003483109
+      0.9999939      0.2491921
+
+type = string-attribute
+name = VOLREG_ROTCOM_000082
+count = 67
+'-rotate -0.0008I 0.2077R 0.0195A -ashift 0.2550S -0.0064L -0.1031P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000082
+count = 12
+      0.9999999   1.600213e-05   0.0003406382   -0.006443599   -1.47673e-05
+      0.9999934   -0.003624733     -0.1031155   -0.000340694    0.003624728
+      0.9999934      0.2550311
+
+type = string-attribute
+name = VOLREG_ROTCOM_000083
+count = 67
+'-rotate -0.0011I 0.2134R 0.0212A -ashift 0.2592S -0.0053L -0.1730P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000083
+count = 12
+      0.9999999   2.127073e-05   0.0003694342   -0.005272602  -1.989438e-05
+      0.9999931   -0.003725173     -0.1730429  -0.0003695109    0.003725165
+       0.999993      0.2592109
+
+type = string-attribute
+name = VOLREG_ROTCOM_000084
+count = 67
+'-rotate -0.0012I 0.2339R 0.0238A -ashift 0.2470S -0.0103L -0.1429P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000084
+count = 12
+      0.9999999   2.329686e-05   0.0004146803    -0.01031865  -2.160352e-05
+      0.9999917   -0.004083018     -0.1429136  -0.0004147719    0.004083009
+      0.9999916      0.2469596
+
+type = string-attribute
+name = VOLREG_ROTCOM_000085
+count = 66
+'-rotate 0.0057I 0.2283R 0.0215A -ashift 0.2707S -0.0028L -0.1694P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000085
+count = 12
+      0.9999999  -9.885943e-05   0.0003751592   -0.002808357   0.0001003532
+      0.9999921   -0.003983891     -0.1694194  -0.0003747623    0.003983928
+       0.999992      0.2707425
+
+type = string-attribute
+name = VOLREG_ROTCOM_000086
+count = 66
+'-rotate 0.0024I 0.2282R 0.0200A -ashift 0.2386S -0.0042L -0.1790P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000086
+count = 12
+      0.9999999  -4.126134e-05   0.0003497527   -0.004167067   4.265424e-05
+      0.9999921   -0.003983453     -0.1790255  -0.0003495856    0.003983468
+       0.999992      0.2385547
+
+type = string-attribute
+name = VOLREG_ROTCOM_000087
+count = 67
+'-rotate -0.0131I 0.2422R 0.0145A -ashift 0.2581S -0.0075L -0.1135P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000087
+count = 12
+      0.9999999   0.0002301372   0.0002530951   -0.007549085  -0.0002290653
+      0.9999911   -0.004226963     -0.1135165  -0.0002540656    0.004226905
+      0.9999911      0.2580603
+
+type = string-attribute
+name = VOLREG_ROTCOM_000088
+count = 65
+'-rotate 0.0039I 0.2244R 0.0211A -ashift 0.2433S 0.0031L -0.2281P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000088
+count = 12
+      0.9999999  -6.713718e-05   0.0003681044     0.00307716   6.857806e-05
+      0.9999923   -0.003915693     -0.2281018  -0.0003678387    0.003915718
+      0.9999923      0.2433031
+
+type = string-attribute
+name = VOLREG_ROTCOM_000089
+count = 67
+'-rotate -0.0024I 0.2402R 0.0304A -ashift 0.2398S -0.0068L -0.1089P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000089
+count = 12
+      0.9999999   4.481823e-05   0.0005312114   -0.006773215  -4.259063e-05
+      0.9999912   -0.004192721      -0.108912  -0.0005313946    0.004192698
+      0.9999911      0.2397717
+
+type = string-attribute
+name = VOLREG_ROTCOM_000090
+count = 66
+'-rotate 0.0019I 0.2308R 0.0320A -ashift 0.2378S -0.0027L -0.2249P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000090
+count = 12
+      0.9999998  -3.142905e-05   0.0005583575   -0.002669766   3.367823e-05
+      0.9999919   -0.004028666     -0.2249395  -0.0005582263    0.004028684
+      0.9999917      0.2378359
+
+type = string-attribute
+name = VOLREG_ROTCOM_000091
+count = 66
+'-rotate 0.0048I 0.2609R 0.0382A -ashift 0.2312S -0.0071L -0.1480P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000091
+count = 12
+      0.9999998  -7.998521e-05   0.0006661584    -0.00710371   8.301762e-05
+      0.9999896   -0.004553309     -0.1480128  -0.0006657874    0.004553363
+      0.9999894      0.2312142
+
+type = string-attribute
+name = VOLREG_ROTCOM_000092
+count = 66
+'-rotate -0.0029I 0.2311R 0.0379A -ashift 0.2753S 0.0006L -0.2233P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000092
+count = 12
+      0.9999998   5.303884e-05   0.0006611028   0.0005675589  -5.037227e-05
+      0.9999919   -0.004032894     -0.2233003  -0.0006613113     0.00403286
+      0.9999917      0.2753196
+
+type = string-attribute
+name = VOLREG_ROTCOM_000093
+count = 67
+'-rotate -0.0014I 0.2481R 0.0353A -ashift 0.2434S -0.0085L -0.2000P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000093
+count = 12
+      0.9999998   2.707464e-05   0.0006155452    -0.00847127  -2.440861e-05
+      0.9999906   -0.004330774     -0.1999697  -0.0006156567    0.004330758
+      0.9999904      0.2433943
+
+type = string-attribute
+name = VOLREG_ROTCOM_000094
+count = 67
+'-rotate -0.0011I 0.2211R 0.0273A -ashift 0.2786S -0.0146L -0.1768P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000094
+count = 12
+      0.9999999   2.102924e-05   0.0004766617    -0.01461872  -1.919004e-05
+      0.9999925   -0.003858167     -0.1768387  -0.0004767393    0.003858157
+      0.9999924      0.2786023
+
+type = string-attribute
+name = VOLREG_ROTCOM_000095
+count = 66
+'-rotate 0.0124I 0.2429R 0.0261A -ashift 0.2572S -0.0152L -0.2510P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000095
+count = 12
+      0.9999999  -0.0002141052   0.0004549776     -0.0152014   0.0002160323
+       0.999991    -0.00423981     -0.2510368  -0.0004540657    0.004239908
+      0.9999909      0.2571544
+
+type = string-attribute
+name = VOLREG_ROTCOM_000096
+count = 66
+'-rotate 0.0036I 0.2497R 0.0232A -ashift 0.2725S -0.0210L -0.1589P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000096
+count = 12
+      0.9999999   -6.06587e-05   0.0004041436    -0.02098531   6.241963e-05
+      0.9999905   -0.004358592     -0.1589067  -0.0004038753    0.004358617
+      0.9999904      0.2724901
+
+type = string-attribute
+name = VOLREG_ROTCOM_000097
+count = 66
+'-rotate 0.0139I 0.2385R 0.0234A -ashift 0.2683S -0.0088L -0.2668P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000097
+count = 12
+      0.9999999  -0.0002410156   0.0004081689   -0.008787661   0.0002427122
+      0.9999913   -0.004161785     -0.2668288  -0.0004071623    0.004161884
+      0.9999912      0.2682842
+
+type = string-attribute
+name = VOLREG_ROTCOM_000098
+count = 66
+'-rotate 0.0067I 0.2524R 0.0235A -ashift 0.2526S -0.0148L -0.2004P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000098
+count = 12
+      0.9999999  -0.0001146616   0.0004100403    -0.01484034   0.0001164671
+      0.9999903    -0.00440586     -0.2003941  -0.0004095311    0.004405907
+      0.9999902      0.2525592
+
+type = string-attribute
+name = VOLREG_ROTCOM_000099
+count = 66
+'-rotate 0.0064I 0.2189R 0.0141A -ashift 0.2825S -0.0064L -0.2346P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000099
+count = 12
+      0.9999999  -0.0001113862    0.000245934   -0.006423087    0.000112325
+      0.9999927   -0.003820507      -0.234643  -0.0002455067    0.003820535
+      0.9999927      0.2825175
+
+type = string-attribute
+name = VOLREG_ROTCOM_000100
+count = 66
+'-rotate 0.0095I 0.2570R 0.0119A -ashift 0.2315S -0.0131L -0.2171P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000100
+count = 12
+      0.9999999  -0.0001648278   0.0002068691    -0.01305321    0.000165754
+      0.9999899   -0.004485082     -0.2171497  -0.0002061277    0.004485116
+      0.9999899      0.2314744
+
+type = string-attribute
+name = VOLREG_ROTCOM_000101
+count = 66
+'-rotate 0.0115I 0.2360R 0.0007A -ashift 0.2438S -0.0050L -0.2021P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000101
+count = 12
+              1  -0.0001998447   1.232837e-05   -0.005033607   0.0001998938
+      0.9999915   -0.004119406      -0.202075  -1.150502e-05    0.004119409
+      0.9999915       0.243826
+
+type = string-attribute
+name = VOLREG_ROTCOM_000102
+count = 65
+'-rotate 0.0152I 0.2570R 0.0051A -ashift 0.2382S 0.0059L -0.2584P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000102
+count = 12
+      0.9999999  -0.0002643621   8.931372e-05    0.005886636   0.0002647601
+      0.9999899   -0.004485677     -0.2584447  -8.812697e-05    0.004485701
+      0.9999899      0.2382287
+
+type = string-attribute
+name = VOLREG_ROTCOM_000103
+count = 66
+'-rotate 0.0181I 0.2580R -0.0006A -ashift 0.2446S 0.0115L -0.1592P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000103
+count = 12
+      0.9999999  -0.0003153573  -1.071152e-05      0.0114839   0.0003153059
+      0.9999898   -0.004502403     -0.1592449   1.213127e-05    0.004502399
+      0.9999899      0.2446285
+
+type = string-attribute
+name = VOLREG_ROTCOM_000104
+count = 66
+'-rotate 0.0192I 0.2521R -0.0002A -ashift 0.2485S 0.0101L -0.2436P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000104
+count = 12
+      0.9999999  -0.0003356216  -4.236049e-06     0.01010007   0.0003355997
+      0.9999903   -0.004399619     -0.2435959   5.712615e-06    0.004399617
+      0.9999903      0.2485041
+
+type = string-attribute
+name = VOLREG_ROTCOM_000105
+count = 66
+'-rotate 0.0167I 0.2890R -0.0084A -ashift 0.2376S 0.0015L -0.1342P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000105
+count = 12
+      0.9999999  -0.0002920648   -0.000147133    0.001503022    0.000291319
+      0.9999872   -0.005043702       -0.13424   0.0001486042    0.005043659
+      0.9999872      0.2376088
+
+type = string-attribute
+name = VOLREG_ROTCOM_000106
+count = 66
+'-rotate 0.0116I 0.2729R -0.0065A -ashift 0.2623S 0.0048L -0.2678P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000106
+count = 12
+              1  -0.0002033807  -0.0001125792    0.004781884   0.0002028422
+      0.9999886   -0.004762928      -0.267762   0.0001135466    0.004762905
+      0.9999887      0.2623361
+
+type = string-attribute
+name = VOLREG_ROTCOM_000107
+count = 67
+'-rotate 0.0097I 0.2906R -0.0008A -ashift 0.2364S -0.0030L -0.1651P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000107
+count = 12
+              1  -0.0001702031  -1.471751e-05   -0.003038519   0.0001701263
+      0.9999871    -0.00507223     -0.1651123   1.558063e-05    0.005072227
+      0.9999871      0.2364019
+
+type = string-attribute
+name = VOLREG_ROTCOM_000108
+count = 68
+'-rotate -0.0064I 0.2907R -0.0111A -ashift 0.1686S -0.0122L -0.2071P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000108
+count = 12
+              1   0.0001100976  -0.0001939201    -0.01223696    -0.00011108
+      0.9999871   -0.005073664     -0.2070733    0.000193359    0.005073685
+      0.9999871      0.1686056
+
+type = string-attribute
+name = VOLREG_ROTCOM_000109
+count = 67
+'-rotate 0.0004I 0.2550R -0.0112A -ashift 0.1711S -0.0054L -0.2473P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000109
+count = 12
+              1  -8.067244e-06  -0.0001949764   -0.005413756   7.199261e-06
+      0.9999901   -0.004451324     -0.2473082   0.0001950103    0.004451323
+        0.99999      0.1710664
+
+type = string-attribute
+name = VOLREG_ROTCOM_000110
+count = 67
+'-rotate 0.0038I 0.2906R -0.0145A -ashift 0.1590S -0.0032L -0.1759P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000110
+count = 12
+      0.9999999  -6.781915e-05  -0.0002528962   -0.003217512    6.65354e-05
+      0.9999871   -0.005072738     -0.1758617    0.000253237    0.005072721
+      0.9999871       0.159032
+
+type = string-attribute
+name = VOLREG_ROTCOM_000111
+count = 67
+'-rotate 0.0041I 0.2826R -0.0112A -ashift 0.1818S -0.0049L -0.2226P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000111
+count = 12
+              1  -7.331241e-05   -0.000196268   -0.004919532   7.234346e-05
+      0.9999878   -0.004932331      -0.222592   0.0001966272    0.004932317
+      0.9999878      0.1818421
+
+type = string-attribute
+name = VOLREG_ROTCOM_000112
+count = 67
+'-rotate 0.0001I 0.2939R -0.0023A -ashift 0.1625S -0.0108L -0.1815P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000112
+count = 12
+              1  -1.509286e-06  -4.049141e-05    -0.01080108   1.301599e-06
+      0.9999868    -0.00512869     -0.1815128   4.049861e-05     0.00512869
+      0.9999868      0.1625499
+
+type = string-attribute
+name = VOLREG_ROTCOM_000113
+count = 67
+'-rotate 0.0108I 0.2947R -0.0007A -ashift 0.1946S -0.0036L -0.1507P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000113
+count = 12
+              1  -0.0001877293  -1.246327e-05    -0.00360459   0.0001876627
+      0.9999868   -0.005143697     -0.1506896   1.342873e-05    0.005143695
+      0.9999868      0.1945526
+
+type = string-attribute
+name = VOLREG_ROTCOM_000114
+count = 66
+'-rotate 0.0142I 0.2944R 0.0005A -ashift 0.1795S -0.0037L -0.2338P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000114
+count = 12
+      0.9999999  -0.0002477508   9.521283e-06   -0.003655736   0.0002477964
+      0.9999868   -0.005138275     -0.2337513  -8.248146e-06    0.005138277
+      0.9999868      0.1795387
+
+type = string-attribute
+name = VOLREG_ROTCOM_000115
+count = 66
+'-rotate 0.0102I 0.3039R 0.0049A -ashift 0.1889S -0.0084L -0.1362P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000115
+count = 12
+              1  -0.0001769792   8.573575e-05   -0.008413419   0.0001774314
+      0.9999859   -0.005303499     -0.1362316  -8.479593e-05    0.005303514
+      0.9999859      0.1888837
+
+type = string-attribute
+name = VOLREG_ROTCOM_000116
+count = 66
+'-rotate 0.0050I 0.2764R 0.0075A -ashift 0.1753S -0.0050L -0.2366P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000116
+count = 12
+              1  -8.675609e-05    0.000131622   -0.005042847   8.739014e-05
+      0.9999884   -0.004824904     -0.2366176  -0.0001312019    0.004824915
+      0.9999884       0.175267
+
+type = string-attribute
+name = VOLREG_ROTCOM_000117
+count = 66
+'-rotate 0.0050I 0.2944R 0.0046A -ashift 0.1643S -0.0082L -0.1485P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000117
+count = 12
+              1  -8.708018e-05   8.029743e-05   -0.008222599   8.749164e-05
+      0.9999868   -0.005138573     -0.1485076  -7.984891e-05     0.00513858
+      0.9999868      0.1642843
+
+type = string-attribute
+name = VOLREG_ROTCOM_000118
+count = 66
+'-rotate 0.0017I 0.2695R 0.0129A -ashift 0.1664S -0.0028L -0.2534P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000118
+count = 12
+              1  -2.857096e-05   0.0002247067   -0.002843528   2.962761e-05
+      0.9999889   -0.004703755     -0.2533844  -0.0002245699    0.004703762
+      0.9999889      0.1664435
+
+type = string-attribute
+name = VOLREG_ROTCOM_000119
+count = 67
+'-rotate -0.0006I 0.2875R 0.0172A -ashift 0.1500S -0.0121L -0.2099P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000119
+count = 12
+      0.9999999   1.133712e-05   0.0003009906    -0.01212324  -9.826852e-06
+      0.9999874     -0.0050172     -0.2098604  -0.0003010437    0.005017196
+      0.9999874      0.1500004
+
+type = string-attribute
+name = VOLREG_ROTCOM_000120
+count = 67
+'-rotate -0.0052I 0.2643R 0.0129A -ashift 0.1820S -0.0124L -0.1980P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000120
+count = 12
+              1   9.135256e-05   0.0002247412    -0.01244187  -9.031496e-05
+      0.9999893   -0.004612584     -0.1980478  -0.0002251602    0.004612564
+      0.9999893      0.1819953
+
+type = string-attribute
+name = VOLREG_ROTCOM_000121
+count = 66
+'-rotate 0.0048I 0.2748R 0.0175A -ashift 0.1638S -0.0118L -0.2384P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000121
+count = 12
+      0.9999999  -8.153168e-05   0.0003061327    -0.01184623   8.299899e-05
+      0.9999885   -0.004796112     -0.2384354  -0.0003057382    0.004796137
+      0.9999884      0.1637664
+
+type = string-attribute
+name = VOLREG_ROTCOM_000122
+count = 66
+'-rotate 0.0021I 0.2695R 0.0153A -ashift 0.2181S -0.0090L -0.1867P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000122
+count = 12
+      0.9999999  -3.578958e-05   0.0002673988    -0.00898405   3.704712e-05
+      0.9999889   -0.004704352     -0.1867012  -0.0002672274    0.004704361
+      0.9999889      0.2180858
+
+type = string-attribute
+name = VOLREG_ROTCOM_000123
+count = 66
+'-rotate 0.0032I 0.2913R 0.0137A -ashift 0.2145S -0.0074L -0.2744P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000123
+count = 12
+      0.9999999  -5.441897e-05   0.0002388188   -0.007425822   5.563252e-05
+      0.9999871   -0.005084416     -0.2743655  -0.0002385391    0.005084429
+      0.9999871      0.2144935
+
+type = string-attribute
+name = VOLREG_ROTCOM_000124
+count = 66
+'-rotate 0.0075I 0.2988R 0.0135A -ashift 0.2167S -0.0086L -0.2081P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000124
+count = 12
+      0.9999999  -0.0001303898   0.0002352297   -0.008642049   0.0001316148
+      0.9999864   -0.005215324     -0.2081299  -0.0002345465    0.005215355
+      0.9999864      0.2166763
+
+type = string-attribute
+name = VOLREG_ROTCOM_000125
+count = 66
+'-rotate 0.0081I 0.2975R 0.0116A -ashift 0.2236S -0.0031L -0.2858P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000125
+count = 12
+      0.9999999  -0.0001398156   0.0002027569   -0.003065547   0.0001408665
+      0.9999865   -0.005192386     -0.2857568  -0.0002020282    0.005192414
+      0.9999865       0.223634
+
+type = string-attribute
+name = VOLREG_ROTCOM_000126
+count = 66
+'-rotate 0.0085I 0.3142R 0.0092A -ashift 0.1948S -0.0087L -0.2166P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000126
+count = 12
+              1  -0.0001473967   0.0001603752   -0.008733792   0.0001482739
+       0.999985   -0.005483805      -0.216633  -0.0001595645    0.005483829
+       0.999985      0.1947878
+
+type = string-attribute
+name = VOLREG_ROTCOM_000127
+count = 66
+'-rotate 0.0085I 0.3073R 0.0093A -ashift 0.2290S -0.0022L -0.3158P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000127
+count = 12
+              1  -0.0001483528   0.0001627086    -0.00219753   0.0001492234
+      0.9999856   -0.005363826     -0.3158343  -0.0001619105     0.00536385
+      0.9999856      0.2289979
+
+type = string-attribute
+name = VOLREG_ROTCOM_000128
+count = 66
+'-rotate 0.0077I 0.3191R 0.0095A -ashift 0.1938S -0.0036L -0.2333P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000128
+count = 12
+              1  -0.0001333604   0.0001655088   -0.003563996     0.00013428
+      0.9999845   -0.005568932     -0.2333488  -0.0001647635    0.005568955
+      0.9999845      0.1937529
+
+type = string-attribute
+name = VOLREG_ROTCOM_000129
+count = 65
+'-rotate 0.0096I 0.3010R 0.0108A -ashift 0.2318S 0.0001L -0.2858P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000129
+count = 12
+      0.9999999  -0.0001664368   0.0001892476   0.0001117977   0.0001674288
+      0.9999862   -0.005253926      -0.285825  -0.0001883706    0.005253958
+      0.9999862      0.2317832
+
+type = string-attribute
+name = VOLREG_ROTCOM_000130
+count = 65
+'-rotate 0.0173I 0.3219R 0.0132A -ashift 0.2050S 0.0010L -0.2847P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000130
+count = 12
+      0.9999999  -0.0003003476   0.0002301327   0.0009529486   0.0003016356
+      0.9999842   -0.005617445      -0.284685  -0.0002284419    0.005617514
+      0.9999842      0.2050075
+
+type = string-attribute
+name = VOLREG_ROTCOM_000131
+count = 66
+'-rotate 0.0044I 0.3186R 0.0056A -ashift 0.2280S -0.0021L -0.2082P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000131
+count = 12
+              1  -7.583887e-05   9.856715e-05   -0.002077514    7.63857e-05
+      0.9999846   -0.005559732      -0.208158  -9.814398e-05    0.005559739
+      0.9999846       0.228029
+
+type = string-attribute
+name = VOLREG_ROTCOM_000132
+count = 66
+'-rotate 0.0053I 0.3147R 0.0096A -ashift 0.2449S -0.0008L -0.2889P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000132
+count = 12
+              1  -9.225814e-05   0.0001681679  -0.0007759606   9.318055e-05
+      0.9999849    -0.00549335      -0.288933  -0.0001676585    0.005493365
+      0.9999849      0.2449193
+
+type = string-attribute
+name = VOLREG_ROTCOM_000133
+count = 66
+'-rotate 0.0022I 0.3381R 0.0120A -ashift 0.2268S -0.0027L -0.2215P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000133
+count = 12
+              1  -3.696349e-05   0.0002098524   -0.002654552   3.820108e-05
+      0.9999826   -0.005900481     -0.2215002  -0.0002096306    0.005900489
+      0.9999826      0.2268074
+
+type = string-attribute
+name = VOLREG_ROTCOM_000134
+count = 65
+'-rotate 0.0037I 0.3403R 0.0121A -ashift 0.2557S 0.0035L -0.2609P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000134
+count = 12
+              1  -6.282251e-05   0.0002104477    0.003464426   6.407148e-05
+      0.9999824   -0.005940053     -0.2609099  -0.0002100708    0.005940067
+      0.9999824      0.2556932
+
+type = string-attribute
+name = VOLREG_ROTCOM_000135
+count = 67
+'-rotate -0.0011I 0.3375R 0.0101A -ashift 0.2661S -0.0048L -0.3012P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000135
+count = 12
+              1   2.084102e-05   0.0001756046   -0.004846414  -1.980625e-05
+      0.9999827   -0.005890586     -0.3012456  -0.0001757243    0.005890582
+      0.9999827      0.2660663
+
+type = string-attribute
+name = VOLREG_ROTCOM_000136
+count = 66
+'-rotate 0.0057I 0.3521R 0.0126A -ashift 0.2536S -0.0064L -0.2285P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000136
+count = 12
+              1  -9.891683e-05   0.0002203105   -0.006366684   0.0001002688
+      0.9999811   -0.006144902     -0.2285473  -0.0002196985    0.006144924
+      0.9999811      0.2535805
+
+type = string-attribute
+name = VOLREG_ROTCOM_000137
+count = 65
+'-rotate 0.0019I 0.3390R 0.0102A -ashift 0.2765S 0.0001L -0.2677P~
+
+type  = float-attribute
+name  = VOLREG_MATVEC_000137
+count = 12
+              1  -3.250879e-05   0.0001777571     0.00011023   3.355991e-05
+      0.9999825   -0.005916389     -0.2676795  -0.0001775616    0.005916395
+      0.9999825      0.2765014
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_ANAT~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_mVKVyayZf3sMFSg2kUe4bQ~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Sun Feb 13 12:29:08 2022~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 0 2 0 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 0 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+      -129.5951       95.81821      -51.39173
+
+type  = float-attribute
+name  = DELTA
+count = 3
+              4             -4       4.000052
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+              4              0              0      -129.5951              0
+             -4              0       95.81821              0              0
+       4.000052      -51.39173
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+        3.99859      0.1060812   -0.003701508      -129.5951       0.106206
+      -3.996162      0.1393594       95.81821              0      0.1394067
+       3.997622      -51.39173
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 276
+      -3.662277       7881.796      -1.495795        7959.85              0
+       7950.885              0           8027   -4.61936e-05           8014
+   -0.001033071       7972.823   -0.002102958       7975.269   -0.001652967
+       7968.346  -3.624894e-05       7986.772              0        7931.74
+              0       7994.354              0       7936.576     -0.1237143
+       8015.428     -0.5090204       8046.802     -0.7390531       7833.881
+      -1.257057        8153.43      -1.425312       7902.064      -1.309211
+       8058.557      -0.984306       7972.115     -0.5369996       8051.321
+     -0.2806825           8058      -0.209276        8051.73     -0.1580402
+       8125.156     -0.2236089       7804.895     -0.2369604       8066.717
+      -0.211055       7843.829     -0.1580223         7986.2      -0.122701
+       8060.254     -0.1857017       8011.503     -0.2740701       8039.635
+     -0.2535628       8051.606     -0.1548439       7959.811    -0.06052274
+       8087.095    -0.04300997        7987.45    -0.04333821       8061.975
+    -0.02136457       7963.431   -0.002752073        8057.13              0
+       7949.242              0       8154.217    -0.01339194       7993.988
+   -0.001645533       8045.131    -0.01988238       7958.766   -0.006432861
+       7969.882  -3.537349e-05       7947.028              0       7934.846
+              0       7999.856              0       7888.974              0
+       7906.904              0       7884.023              0       7973.031
+              0       7946.476              0       7865.869              0
+       7991.701              0       7879.779              0       7900.344
+  -0.0001010373       7971.983    -0.00123179       7936.146  -0.0007526577
+        7930.64  -0.0005910713       7961.325   -0.008328151       7979.055
+    -0.01029388       7880.166   -0.006635981       7921.039   -0.001676766
+       7861.452  -1.631677e-06       7896.937  -0.0001521707       7938.872
+              0       7906.303              0       7929.869              0
+       7827.048              0       7924.778              0       7835.841
+              0       7883.547              0       7741.092              0
+       7869.316              0       7741.981              0        7833.55
+              0        7794.32              0       7904.441              0
+       7825.686              0        7769.06              0       7925.876
+              0        7890.95              0       7935.154              0
+       7856.625              0       7874.563   -0.007361531       7834.688
+    -0.01594913       7831.058    -0.01673806       7895.074    -0.09106529
+       7917.048     -0.1477765       7799.356     -0.1108952        7850.07
+    -0.01561391       7671.587   -0.006573271       7846.556   -0.009683568
+       7622.757   -0.005891968       7870.918  -0.0002604742       7713.771
+  -0.0003761938       7772.818              0         7795.1              0
+       7609.811              0       7912.867  -0.0001900536       7553.646
+              0       7851.392              0       7620.904              0
+       7741.011              0       7769.138              0       7700.912
+              0       7875.027              0       7702.536              0
+       7883.148              0       7872.892              0       7848.455
+              0       7786.307              0       7835.587  -3.454741e-06
+       7731.291   -0.001593612       7845.186   -0.003251117       7869.906
+   -0.004984465       7918.873   -0.005211364       7817.237    -0.02066305
+       7909.332     -0.1870052       7798.161     -0.3325624       7839.007
+     -0.2411328       7813.993    -0.01490873       7805.875     -0.0515269
+       7820.977     -0.4665712       7788.806     -0.5052023       7842.012
+     -0.1295553       7710.016              0       7877.509              0
+       7705.856   -0.001044542       7838.326    -0.04044628       7684.903
+     -0.1467884       7822.332     -0.2024709       7890.756     -0.1350591
+       7865.814    -0.03448302       7860.478   -0.001755223       7834.941
+   -0.005474687       7751.389     -0.5263236       7788.864      -1.772956
+       7766.167
+
+type = integer-attribute
+name = TAXIS_NUMS
+count = 8
+ 138 0 77002 -999 -999
+ -999 -999 -999
+
+type  = float-attribute
+name  = TAXIS_FLOATS
+count = 8
+              0              2              0              0              0
+        -999999        -999999        -999999
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 138 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 64 64 32 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 138
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 138
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 590
+'#5~#6~#7~#8~#9~#10~#11~#12~#13~#14~#15~#16~#17~#18~#19~#20~#21~#22~#23~#24~#25~#26~#27~#28~#29~#30~#31~#32~#33~#34~#35~#36~#37~#38~#39~#40~#41~#42~#43~#44~#45~#46~#47~#48~#49~#50~#51~#52~#53~#54~#55~#56~#57~#58~#59~#60~#61~#62~#63~#64~#65~#66~#67~#68~#69~#70~#71~#72~#73~#74~#75~#76~#77~#78~#79~#80~#81~#82~#83~#84~#85~#86~#87~#88~#89~#90~#91~#92~#93~#94~#95~#96~#97~#98~#99~#100~#101~#102~#103~#104~#105~#106~#107~#108~#109~#110~#111~#112~#113~#114~#115~#116~#117~#118~#119~#120~#121~#122~#123~#124~#125~#126~#127~#128~#129~#130~#131~#132~#133~#134~#135~#136~#137~#138~#139~#140~#141~#142~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 138
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 5
+'ORIG~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~
