@@ -1,0 +1,18 @@
+#! /bin/bash
+
+working_directory=/home/nikin/Functional-Connectivity/Processed_Data/BOLD_fMRI_Data/
+
+
+if [[ -d "${working_directory}" ]] ; then
+    cd ${working_directory}
+    for category in HC ; do
+        pushd ${category}
+            for subject in $(ls) ; do
+                if [[ -f "$subject" ]] ; then
+                    inset=$(echo ${subject} | cut -d'_' -f 3)
+                    mv "${subject}" "BOLD-${inset}"
+                fi
+            done
+            popd
+    done
+fi
