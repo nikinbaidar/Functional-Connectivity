@@ -1,0 +1,236 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 146
+'[nikin@leviathan: Sun Feb 13 12:47:05 2022] {AFNI_22.0.03:linux_openmp_64} 3dcalc -prefix BOLD-0285-BOLD-EC-tmp -a BOLD-0285.nii -expr a -verbose~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_ANAT~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_Q73RaoauBr_pB6_W6Nq_zg~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Sun Feb 13 12:47:05 2022~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 0 2 0 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 0 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+      -126.9999       91.15887      -40.10672
+
+type  = float-attribute
+name  = DELTA
+count = 3
+              4             -4       4.000053
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+              4              0              0      -126.9999              0
+             -4              0       91.15887              0              0
+       4.000053      -40.10672
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+       3.991902     0.07422083     -0.2433089      -126.9999     0.07898116
+      -3.998522     0.07482302       91.15887      0.2418259     0.07947004
+       3.991946      -40.10672
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 286
+              0          15218              0           9613              0
+           8452              0           8126              0           8059
+              0           8018              0           8022              0
+           8047              0           8001              0           8017
+              0           8015              0           8043              0
+           8036              0           8057              0           8087
+              0           8086              0           8028              0
+           8037              0           8090              0           8028
+              0           7998              0           8051              0
+           8014              0           8060              0           7982
+              0           8018              0           8006              0
+           7994              0           8012              0           7986
+              0           8010              0           8042              0
+           8031              0           8068              0           8058
+              0           8098              0           7994              0
+           8030              0           8032              0           7984
+              0           8034              0           7962              0
+           8031              0           7980              0           7961
+              0           8001              0           8005              0
+           8009              0           8041              0           8006
+              0           8031              0           7970              0
+           7964              0           7930              0           7937
+              0           7952              0           7970              0
+           8045              0           7998              0           8027
+              0           8009              0           8004              0
+           8025              0           7996              0           7948
+              0           7896              0           7948              0
+           7971              0           7942              0           7918
+              0           7943              0           7939              0
+           7907              0           7977              0           7948
+              0           7963              0           7968              0
+           7938              0           7928              0           7919
+              0           7957              0           7896              0
+           7950              0           7914              0           7985
+              0           7965              0           7956              0
+           7964              0           7917              0           7886
+              0           7945              0           7909              0
+           7920              0           7937              0           7895
+              0           7980              0           7951              0
+           7994              0           7975              0           8033
+              0           7997              0           7963              0
+           7949              0           7948              0           7925
+              0           7930              0           7969              0
+           7951              0           7920              0           7932
+              0           7995              0           7932              0
+           7955              0           7906              0           7999
+              0           7930              0           7974              0
+           8023              0           7994              0           8028
+              0           7963              0           7796              0
+           7928              0           7814              0           8038
+              0           8003              0           8014              0
+           8039              0           8019              0           7989
+              0           7977              0           7985              0
+           7984              0           8049              0           7985
+              0           8011              0           8003              0
+           8028              0           8021              0           8002
+              0           8064              0           7953              0
+           7969
+
+type = integer-attribute
+name = TAXIS_NUMS
+count = 8
+ 143 0 77002 -999 -999
+ -999 -999 -999
+
+type  = float-attribute
+name  = TAXIS_FLOATS
+count = 8
+              0              2              0              0              0
+        -999999        -999999        -999999
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 143 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 64 64 32 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 143
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 143
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 5
+'ORIG~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~

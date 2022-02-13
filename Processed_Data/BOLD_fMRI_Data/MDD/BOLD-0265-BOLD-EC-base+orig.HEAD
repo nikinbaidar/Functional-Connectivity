@@ -1,0 +1,121 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 289
+'[nikin@leviathan: Sun Feb 13 12:43:34 2022] {AFNI_22.0.03:linux_openmp_64} 3dDespike -prefix BOLD-0265-BOLD-EC BOLD-0265-BOLD-EC1+orig\n[nikin@leviathan: Sun Feb 13 12:43:47 2022] {AFNI_22.0.03:linux_openmp_64} 3dcalc -prefix BOLD-0265-BOLD-EC-base -a 'BOLD-0265-BOLD-EC+orig[26]' -expr a~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_ANAT~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_HXb7zc0Q4ZtneLiUDGgE0Q~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Sun Feb 13 12:43:47 2022~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 0 2 0 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 0 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+      -132.3929       95.34235      -22.92349
+
+type  = float-attribute
+name  = DELTA
+count = 3
+              4             -4       4.000061
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+              4              0              0      -132.3929              0
+             -4              0       95.34235              0              0
+       4.000061      -22.92349
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+       3.995229      0.1942208     0.02049972      -132.3929       0.195318
+      -3.973164     -0.4193216       95.34235              0      -0.419816
+       3.977969      -22.92349
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 2
+  -7.413328e-07           7464
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 1 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 64 64 32 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 1
+ 3
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 1
+              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 4
+'#31~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 1
+'~
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 5
+'ORIG~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~
