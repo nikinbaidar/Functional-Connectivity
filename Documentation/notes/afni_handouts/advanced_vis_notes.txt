@@ -1,0 +1,148 @@
+#pre-step for later...
+cd AFNI_demos/FATCAT_DEMO
+tcsh Do_00_PRESTO_ALL_RUNS.tcsh
+
+afni_proc.py QC if you haven't seen it yet!
+
+@DriveAfni
+plugout_drive
+README.driver
+(@DriveSuma, DriveSuma)
+
+@chauffeur_afni
+    @chauffeur_afni                     \
+        -ulay    anat+orig              \
+        -prefix  PRETTY_PICTURE         \
+        -montx 5 -monty 3               \
+        -set_xhairs OFF                 \
+        -label_mode 1 -label_size 3     \
+        -do_clean 
+aiv PRETTY_PICTURE.*.png
+
+show volume in space
+  - could have surfaces from freesurfer
+  anat, strip datasets - multiple slices, rendering
+  func_slim - range, threshold  
+
+   cd AFNI_data6/afni
+   suma -vol anat+orig -vol func_slim+orig
+   open object controller (ctrl-s)
+   show all objects (All Objs button top of object controller)
+   change to func_slim volume
+   change I (Intensity) volume to Vrel#0_Coef. T (Threshold) to Vrel#0_Tstat
+   change Cmp (color map) to bgyr19
+   change threshold to 7.0
+   change Max of range to 2
+   play with slices - number of slices, planes, scroll
+   change object to Anat+orig
+   click v to volume render
+   make anat transparent with Trn at 10
+   switch back to func_slim
+   move through slices some more (shift-scroll and sliders)
+   turn off slices in func_slim
+   click v to volume render
+
+
+clusters in 3D
+   3dClusterize -clust_nvox 200 -bisided -5 5 -ithr 2 -idat 1 -NN 1 \
+        -inset func_slim+orig. -pref_map myclusters -overwrite
+   3dZeropad -P 1 -prefix myclusters_zp -overwrite myclusters+orig
+   IsoSurface -isorois+dsets -o clusttest.gii -overwrite -input myclusters_zp+orig
+   afni -niml
+   suma -onestate -i *.gii -vol strip+orig. -sv anat+orig
+
+   in afni, set overlay to Vrel#0_Coef and threshold to Vrel#0_Tstat
+   threshold around 5
+
+   in suma, turn off convexity shading with 'b'
+   show object controller (ctrl-s)
+   show all objects
+   select strip+orig
+   change number of axial slices to 5:20
+   right-click on slices, scroll with shift-scroll or arrow
+   change transparency of strip+orig slices with ctrl-o or trn button
+   change transparency of all other objects with 'o' key
+   change points mode of individual regions with 'p' key
+   talk to afni with 't'
+   (even more advanced, use Vol2Surf plugin with map all, normals, norm len=-4)
+
+show atlas in suma
+   mkdir atlassurfs
+   cd atlassurfs
+   IsoSurface -isorois+dsets -o TT_desai.gii -input ~/abin/TT_desai_dd_mpm+tlrc.
+
+   suma -onestate -i *.gii -vol ~/abin/TT_N27+tlrc.
+
+   opacity, points -hiding mesh, some or all - exploring and limiting
+
+   for specific regions,
+   suma -onestate -i *Hippo*.gii -vol ~/abin/TT_N27+tlrc
+   
+show atlas with volume
+   slices, rendered volume
+   afni -niml anat+tlrc  ~/abin/TT_desai_dd_mpm+tlrc.
+   change overlay to TT_desai_dd_mpm+tlrc
+   suma -vol anat+tlrc -vol ~/abin/TT_desai_dd_mpm+tlrc.
+   Press 't' in suma to talk to afni
+   turn on volume rendering for anat+tlrc
+   click 's' in volume rendering control to turn off selection and allow click through to atlas   
+
+Thickness - methods - examples, comparison with FreeSurfer
+   https://afni.nimh.nih.gov/pub/dist/HBM2018/OHBM_2018_Thickness.pdf
+   curl https://afni.nimh.nih.gov/pub/dist/HBM2018/OHBM_2018_Thickness.pdf --output thickness.pdf
+   afni_open thickness.pdf
+   
+Brain / brain region printing
+   ConvertSurface -i TT_desai.Right-Hippocampus.k178.gii -o right_hippo.stl 
+
+graymap carpet plots
+   3dAutomask -prefix epi_r1_am epi_r1+orig
+   3dGrayplot -mask epi_r1_am+orig. -input epi_r1+orig -prefix graymap
+   3dGrayplot -mask epi_r1_am+orig. -input rall_vr+orig.'[0..148]' -overwrite -prefix graymap_vr
+   aiv graymap*.png
+
+SUMA balls
+   https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/tutorials/rois_corr_vis/suma_spheres.html
+   https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/_downloads/demo_suma_spheres.tgz
+   tar xzvf ~/Downloads/demo_suma_spheres.tgz
+   suma -i surf_sphere.gii
+   suma -i ico_combined.gii
+   
+Deface / Reface
+   tcsh ~/afni_handouts/deface_anat.csh anat+orig anat+tlrc strip+orig
+   suma -vol anat+org &
+   suma -vol anat_deface+orig &   (somewhat gory)
+   @afni_refacer_run anat+orig.HEAD
+   suma -vol anat.refacer.RESULT.nii &
+   
+   #result with the -deface option, even gorier
+   @afni_refacer_run -deface anat+orig.HEAD
+   suma -vol anat.refacer.RESULT.deface.nii & 
+
+suma -dev clipping planes
+   
+DTI,Instacorr
+   cd AFNI_demos/FATCAT_DEMO
+   tcsh Do_00_PRESTO_ALL_RUNS.tcsh
+   tcsh Do_09_VISdti_SUMA_visual_ex3.tcsh
+
+Surface Instacorr
+   cd ~/AFNI_data6/FT_analysis/FT.surf.results
+   ./run_suma
+   ctrl-s to open object controller
+   Load Dset - errts
+   Shift-D - to start Dot product correlation menu. Apply
+   Shift-Ctrl-right click to set seed
+   
+Music and the Brain
+   https://www.youtube.com/watch?v=7nS4u84ppf4
+
+Acknowledgements in suma
+   https://afni.nimh.nih.gov/afni/community/board/read.php?1,146293,146293
+   http://afni.nimh.nih.gov/sscc/staff/glend/collaborations/NIMLcontributors.tgz
+   suma -gdset /home/dglen/macaque_connections/contributor_connections.niml.dset
+
+   
+
+
+

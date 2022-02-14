@@ -1,0 +1,83 @@
+# Copy+pasteable commands from the AFNI Bootcamp's "afni11_roi.pdf"
+# presentation
+
+
+cd AFNI_data6/roi_demo
+
+# Change grid/resolution of data set from (high res) anat to 
+# (low res) EPI
+3dresample                   \
+    -master rall_vr+orig     \
+    -prefix anat_roi_resam   \
+    -inset anat_roi+orig     \
+    -rmode NN
+
+
+# Calculate average value per time point, dump to text file...
+3dmaskave                      \
+    -mask anat_roi_resam+orig  \
+    -quiet                     \
+    rall_vr+orig > epi_avg.1D
+
+# ... and view dumped text file results, using either of these
+more epi_avg.1D
+
+
+
+# Dump *values* of a dset that are within a mask region into a 
+# text file; no coordinate locations saved in this case, but could 
+# save the coordinates of each voxel, too.
+3dmaskdump                                \
+    -noijk                                \
+    -mask anat_roi_resam+orig             \
+    func_slim+orig'[2]' > Vrel-tstats.txt
+
+# ... and view dumped text file results
+more Vrel-tstats.txt
+
+
+# Compute separate statistics for each ROI in a volume
+3dROIstats                  \
+    -mask 3rois+orig        \
+    func_slim+orig'[0]'
+
+
+# *** 3dClusterize example here with updated notation!! ***
+# put the stats in a standard space for later use with whereami
+adwarp                       \
+    -apar anat+tlrc          \
+    -dpar func_slim+orig     \
+    -dxyz 3
+# cluster
+3dClusterize -clust_nvox 200 -bisided -8.0 8.0 -ithr 2 -idat 1 -NN 1 \
+  -inset func_slim+tlrc. -pref_map myclusters
+
+
+# Find suprathreshold voxels, and make into clusters (kinda like GUI's
+# Clusterize functionality and/or 3dclust)
+3dmerge                       \
+    -prefix func_roi          \
+    -dxyz=1                   \
+    -1clip 99.0               \
+    -1clust_order 1 200       \
+    func_slim+orig.'[0]'
+
+
+# ============ "Getting around with spheres" example ==========
+# Try this:
+
+adwarp                       \
+    -apar anat+tlrc          \
+    -dpar func_slim+orig     \
+    -dxyz 3
+
+# 1) In afni GUI, select:
+#         Underlay -> anat, 
+#         Overlay  -> func_slim
+# 2) Switch 'view' to Talairach
+# 3) Overlay index   -> vrel_coef,
+#    Threshold index -> vrel_tstat
+# 4) Clusterize (default opts OK), and Save Tabl
+1dcat Clust_table.1D'[4..6]' > Clust_PeakXYZ.1D
+3dUndump -srad 7.5 -master func_slim+tlrc -orient RAI   \
+      -prefix clust_spheres -xyz Clust_PeakXYZ.1D
