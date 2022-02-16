@@ -1,0 +1,147 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 1173
+'[nikin@leviathan: Tue Feb 15 22:18:33 2022] {AFNI_22.0.03:linux_openmp_64} 3dSkullStrip -prefix 0273-T1-NoSkull -input BOLD-0273-EC-T1+tlrc.\n[nikin@leviathan: Tue Feb 15 22:18:34 2022] {AFNI_22.0.03:linux_openmp_64} 3dcopy ./0273-T1-NoSkull+tlrc ./0273-T1-NoSkull_shft+tlrc\n[nikin@leviathan: Tue Feb 15 22:18:39 2022] {AFNI_22.0.03:linux_openmp_64} 3dCM -automask -set -8.77197 -25.2727 8.59533 ./0273-T1-NoSkull_shft+tlrc\n[nikin@leviathan: Tue Feb 15 22:18:40 2022] {AFNI_22.0.03:linux_openmp_64} 3dcopy ./0273-T1-NoSkull_shft+tlrc ./__tt_0273-T1-NoSkull_shft+tlrc\n[nikin@leviathan: Tue Feb 15 22:18:58 2022] {AFNI_22.0.03:linux_openmp_64} 3dAllineate -base ./__tt_0273-BOLD-EC-base_ts_ns+orig -1Dmatrix_apply ./0273-T1-NoSkull_shft_alBOLDEC_mat.aff12.1D -prefix ./0273-T1-NoSkull_shft_alBOLDEC -input ./__tt_0273-T1-NoSkull_shft+tlrc -master SOURCE -weight_frac 1.0 -maxrot 6 -maxshf 10 -VERB -warp aff -source_automask+4 -onepass\n[nikin@leviathan: Tue Feb 15 22:19:00 2022] align_epi_anat.py -anat 0273-T1-NoSkull_shft+tlrc. -epi  0273-BOLD-EC-base+orig. -epi_base 0 -suffix _alBOLDEC -anat_has_skull no  -epi_strip 3dAutomask -volreg off -tshift off -resample off~
+
+type  = float-attribute
+name  = ALLINEATE_MATVEC_B2S_000000
+count = 12
+        1.13552     -0.0340435      0.0538069        11.9937       0.032512
+       0.803767      0.0181454        4.12867     0.00818999     -0.0752051
+       0.709586      -0.696084
+
+type  = float-attribute
+name  = ALLINEATE_MATVEC_S2B_000000
+count = 12
+      0.8802544     0.03096366    -0.06754024      -10.73236    -0.03529208
+       1.239931    -0.02903112       -4.71619    -0.01390024       0.131056
+       1.406975      0.6050012
+
+type = string-attribute
+name = ALLINEATE_WARP_TYPE
+count = 15
+'affine_general~
+
+type  = float-attribute
+name  = ALLINEATE_PARAMS_000000
+count = 12
+              0              0              0              0              0
+              0              1              1              1              0
+              0              0
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_ANAT~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_tF8BnqPdZn2qSx1lj1v2Pg~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Tue Feb 15 22:18:58 2022~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 11 0 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 0 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+      -136.5349       91.11579      -77.13385
+
+type  = float-attribute
+name  = DELTA
+count = 3
+              1             -1      0.9999706
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+              1              0              0      -136.5349              0
+             -1              0       91.11579              0              0
+      0.9999706      -77.13385
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+              1              0              0      -136.5349              0
+             -1              0       91.11579              0              0
+      0.9999706      -77.13385
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 2
+              0           4236
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 1 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 256 256 180 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 1
+ 1
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 1
+              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 3
+'#0~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 1
+'~
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 5
+'TLRC~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~
