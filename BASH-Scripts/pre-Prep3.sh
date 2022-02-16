@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Define a working directory
-WORKING_DIR=${HOME}/Functional_Connectivity/Processed_Data/Normalized_Data
+WORKING_DIR=${HOME}/Functional-Connectivity/Processed_Data/Normalized_Data
 
 # Path to BOLD fMRI Data:
 BOLD_DATA=${HOME}/Functional_Connectivity/Processed_Data/BOLD_fMRI_Data
@@ -13,7 +13,7 @@ SUBJECTS=${HOME}/Functional_Connectivity/Subjects
 if [ -d ${WORKING_DIR} ]
 then
     pushd ${WORKING_DIR}
-    rm -rf *
+    # rm -rf *
 else
     echo "${WORKING_DIR}: doesn't exist"
     exit 111;

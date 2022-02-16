@@ -8,21 +8,20 @@
 # | |___________________________________________________________________| |
 # |_______________________________________________________________________|
 #
-# Notes:
-# 1. Do not put spaces before line continuation character when you're splitting
-#    paths
-#
-# Define yout own working directory
+# Define your own working directory
 # Note: Whenver you define a directory in a variable, it should not end with
 # the '/' character
-WORKING_DIR=${HOME}/Functional_Connectivity/Processed_Data/Normalized_Data
+
+WORKING_DIR=${HOME}/Functional-Connectivity/Processed_Data/Normalized_Data
 
 # Create an array with the names of the directory in which the data for healthy
 # controls and majorly depressed patient are stored.
+
 CATEGORIES=(HC MDD)
 
 # Define the path in which the MNI_Template/atlas will be stored. This
 # directory will be create if it doesn't exist.
+
 MNI_Template="${HOME}/Functional_Connectivity/Processed_Data/"\
 "Normalized_Data/MNI_Atlas"
 
@@ -46,6 +45,7 @@ fi
 ln -sf /opt/afni/MNI_avg152T1+tlrc.* ${MNI_Template}/
 
 # Change into the working directory if it exists
+
 if [ -d "${WORKING_DIR}" ]
 then
     pushd ${WORKING_DIR}
@@ -219,6 +219,9 @@ do
 
 done
 
-popd;
+popd
 
-tree ${WORKING_DIR}
+if which tree
+then
+    tree ${WORKING_DIR}
+fi
