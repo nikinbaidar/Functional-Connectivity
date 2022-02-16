@@ -1,0 +1,4 @@
+# 3dDeconvolve -float -polort A -bucket bucket -errts 0349-BOLD-EC-volreg-Nwarp-blur6-ld -input 0349-BOLD-EC-volreg-Nwarp-blur6+tlrc.
+
+3dREMLfit -matrix bucket.xmat.1D -input 0349-BOLD-EC-volreg-Nwarp-blur6+tlrc. \
+ -Rbuck bucket_REML -Rvar bucket_REMLvar -Rerrts 0349-BOLD-EC-volreg-Nwarp-blur6-ld_REML -verb $*
