@@ -1,5 +1,4 @@
 #! /bin/bash
-# AFNI commands will be labeled steps
 
 # Source /etc/profile, I want to skip this becuase I have set my own profile
 # . /etc/profile
