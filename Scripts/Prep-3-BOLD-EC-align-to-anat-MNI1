@@ -12,7 +12,8 @@
 # Note: Whenver you define a directory in a variable, it should not end with
 # the '/' character
 
-WORKING_DIR=${HOME}/Functional-Connectivity/Processed_Data/Normalized_Data
+WORKING_DIR="${HOME}/Functional-Connectivity/Processed_Data/"\
+"Spatially_Normalized_Data"
 
 # Create an array with the names of the directory in which the data for healthy
 # controls and majorly depressed patient are stored.
