@@ -1,0 +1,147 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 1881
+'[nikin@leviathan: Tue Feb 15 21:28:46 2022] {AFNI_22.0.03:linux_openmp_64} 3dSkullStrip -prefix 0259-T1-NoSkull -input BOLD-0259-EC-T1+tlrc.\n[nikin@leviathan: Tue Feb 15 21:28:47 2022] {AFNI_22.0.03:linux_openmp_64} 3dcopy ./0259-T1-NoSkull+tlrc ./0259-T1-NoSkull_shft+tlrc\n[nikin@leviathan: Tue Feb 15 21:28:57 2022] {AFNI_22.0.03:linux_openmp_64} 3dCM -automask -set 0.609688 -20.8397 39.8674 ./0259-T1-NoSkull_shft+tlrc\n[nikin@leviathan: Tue Feb 15 21:28:58 2022] {AFNI_22.0.03:linux_openmp_64} 3dcopy ./0259-T1-NoSkull_shft+tlrc ./__tt_0259-T1-NoSkull_shft+tlrc\n[nikin@leviathan: Tue Feb 15 21:29:23 2022] {AFNI_22.0.03:linux_openmp_64} 3dAllineate -base ./__tt_0259-BOLD-EC-base_ts_ns+orig -1Dmatrix_apply ./0259-T1-NoSkull_shft_alBOLDEC_mat.aff12.1D -prefix ./0259-T1-NoSkull_shft_alBOLDEC -input ./__tt_0259-T1-NoSkull_shft+tlrc -master SOURCE -weight_frac 1.0 -maxrot 6 -maxshf 10 -VERB -warp aff -source_automask+4 -onepass\n[nikin@leviathan: Tue Feb 15 21:29:24 2022] align_epi_anat.py -anat 0259-T1-NoSkull_shft+tlrc. -epi  0259-BOLD-EC-base+orig. -epi_base 0 -suffix _alBOLDEC -anat_has_skull no  -epi_strip 3dAutomask -volreg off -tshift off -resample off\n[nikin@leviathan: Tue Feb 15 21:29:26 2022] {AFNI_22.0.03:linux_openmp_64} 3dcopy ./0259-T1-NoSkull_shft_alBOLDEC+tlrc ./0259-T1-NoSkull_shft_alBOLDEC_shft+tlrc\n[nikin@leviathan: Tue Feb 15 21:29:26 2022] {AFNI_22.0.03:linux_openmp_64} 3drefit -dxorigin 1.363403 -dyorigin 52.333893 -dzorigin -28.520912 ./0259-T1-NoSkull_shft_alBOLDEC_shft+tlrc\n[nikin@leviathan: Tue Feb 15 21:29:34 2022] {AFNI_22.0.03:linux_openmp_64} 3dAllineate -prefix 0259-T1_to_T1_Allineate -base /home/nikin/Functional_Connectivity/Processed_Data/Normalized_Data/MNI_Atlas/MNI_avg152T1+tlrc. -source 0259-T1-NoSkull_shft_alBOLDEC_shft+tlrc. -1Dmatrix_save T1_to_T1_Allineate.aff12.1D -source_automask -cost lpa -autoweight -cmass~
+
+type  = float-attribute
+name  = ALLINEATE_MATVEC_B2S_000000
+count = 12
+      0.7875187      0.0167853    -0.09789443      -1.112137    -0.05234424
+      0.7091567     0.04044325       21.66612     0.03127514    -0.07924575
+      0.9529384       18.82646
+
+type  = float-attribute
+name  = ALLINEATE_MATVEC_S2B_000000
+count = 12
+       1.263611    -0.01533043      0.1304602     -0.7186439      0.0951833
+       1.402315    -0.04973695       -29.3405    -0.03355594      0.1171187
+       1.040968      -22.17257
+
+type = string-attribute
+name = ALLINEATE_WARP_TYPE
+count = 15
+'affine_general~
+
+type  = float-attribute
+name  = ALLINEATE_PARAMS_000000
+count = 12
+      -1.112137       21.66612       18.82645      0.8673325       2.843609
+       7.093128      0.7937574      0.7110001      0.9521183    -0.05281769
+     -0.1110827    -0.04548059
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_ANAT~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_b4ASqhe7d3iOwDpib54XHg~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Tue Feb 15 21:29:34 2022~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 11 0 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 1 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+             90            126            -72
+
+type  = float-attribute
+name  = DELTA
+count = 3
+             -2             -2              2
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+             -2              0              0             90              0
+             -2              0            126              0              0
+              2            -72
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+             -2              0              0             90              0
+             -2              0            126              0              0
+              2            -72
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 2
+              0           4241
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 1 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 91 109 91 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 1
+ 1
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 1
+              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 3
+'#0~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 1
+'~
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 4
+'MNI~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~
