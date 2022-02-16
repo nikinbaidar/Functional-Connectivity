@@ -1,0 +1,142 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 425
+'[nikin@leviathan: Tue Feb 15 20:42:28 2022] {AFNI_22.0.03:linux_openmp_64} 3dSkullStrip -prefix 0355-T1-NoSkull -input BOLD-0355-EC-T1+tlrc.\n[nikin@leviathan: Tue Feb 15 20:42:29 2022] {AFNI_22.0.03:linux_openmp_64} 3dcopy ./0355-T1-NoSkull+tlrc ./0355-T1-NoSkull_shft+tlrc\n[nikin@leviathan: Tue Feb 15 20:42:34 2022] {AFNI_22.0.03:linux_openmp_64} 3dCM -automask -set 0.404442 -15.5435 43.1371 ./0355-T1-NoSkull_shft+tlrc~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_ANAT~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_HH3aFiI0ertIuDqDQZznug~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Tue Feb 15 20:42:29 2022~
+
+type = string-attribute
+name = IDCODE_WARP_PARENT
+count = 27
+'XYZ_0WEQMAtDk5M8ulZNGP3EDw~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 11 0 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 1 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+       96.04225       96.48437       -41.0497
+
+type  = float-attribute
+name  = DELTA
+count = 3
+             -1             -1      0.9999163
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+             -1              0              0           96.5              0
+             -1              0       103.1953              0              0
+      0.9999163      -53.08345
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+             -1              0              0       96.04225              0
+             -1              0       96.48437              0              0
+      0.9999163       -41.0497
+
+type = integer-attribute
+name = WARP_TYPE
+count = 8
+ 0 0 -999 -999 -999
+ -999 -999 -999
+
+type  = float-attribute
+name  = WARP_DATA
+count = 30
+              1              0              0              0              1
+              0              0              0              1              1
+              0              0              0              1              0
+              0              0              1              0              0
+              0              0              0              0          -9999
+          -9999          -9999           9999           9999           9999
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 2
+              0           4360
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 1 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 192 237 180 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 1
+ 1
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 1
+              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 3
+'#0~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 1
+'~
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 5
+'TLRC~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~
