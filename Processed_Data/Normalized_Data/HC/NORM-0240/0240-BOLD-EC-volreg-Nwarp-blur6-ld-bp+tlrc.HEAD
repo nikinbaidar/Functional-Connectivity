@@ -1,0 +1,242 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 2850
+'[nikin@leviathan: Mon Feb 14 12:15:17 2022] ===================================\n[nikin@leviathan: Mon Feb 14 12:15:17 2022] === History of inputs to 3dcalc ===\n[nikin@leviathan: Mon Feb 14 12:15:17 2022] === Input a:\n[nikin@leviathan: Mon Feb 14 12:15:17 2022] [nikin@leviathan: Mon Feb 14 12:14:50 2022] {AFNI_22.0.03:linux_openmp_64} 3dDespike -prefix 0240-BOLD-EC 0240-BOLD-EC1+orig\n[nikin@leviathan: Mon Feb 14 12:15:04 2022] {AFNI_22.0.03:linux_openmp_64} 3dvolreg -verbose -tshift 0 -base 20 -1Dfile outliers-BOLD-EC.1D -prefix 0240-BOLD-EC-volreg 0240-BOLD-EC+orig\n[nikin@leviathan: Mon Feb 14 12:15:17 2022] === Input b:\n[nikin@leviathan: Mon Feb 14 12:15:17 2022] [nikin@leviathan: Mon Feb 14 12:14:50 2022] {AFNI_22.0.03:linux_openmp_64} 3dDespike -prefix 0240-BOLD-EC 0240-BOLD-EC1+orig\n[nikin@leviathan: Mon Feb 14 12:15:04 2022] {AFNI_22.0.03:linux_openmp_64} 3dvolreg -verbose -tshift 0 -base 20 -1Dfile outliers-BOLD-EC.1D -prefix 0240-BOLD-EC-volreg 0240-BOLD-EC+orig\n[nikin@leviathan: Mon Feb 14 12:15:17 2022] {AFNI_22.0.03:linux_openmp_64} 3dAutomask -prefix 0240-BOLD-EC-mask -dilate 1 0240-BOLD-EC-volreg+orig\n[nikin@leviathan: Mon Feb 14 12:15:17 2022] ===================================\n[nikin@leviathan: Mon Feb 14 12:15:17 2022] {AFNI_22.0.03:linux_openmp_64} 3dcalc -prefix 0240-BOLD-EC-volreg-mask -a 0240-BOLD-EC-volreg+orig -b 0240-BOLD-EC-mask+orig -expr 'a*b'\n[nikin@leviathan: Tue Feb 15 17:42:05 2022] {AFNI_22.0.03:linux_openmp_64} 3dcopy 0240-BOLD-EC-volreg-mask+orig. 0240-BOLD-EC-volreg-mask_temp\n[nikin@leviathan: Tue Feb 15 17:42:06 2022] {AFNI_22.0.03:linux_openmp_64} 3dcopy ./0240-BOLD-EC-volreg-mask_temp+orig ./0240-BOLD-EC-volreg-mask_temp_shft+orig\n[nikin@leviathan: Tue Feb 15 17:42:08 2022] {AFNI_22.0.03:linux_openmp_64} 3dCM -automask -set -0.448799 28.3455 9.77289 ./0240-BOLD-EC-volreg-mask_temp_shft+orig\n[nikin@leviathan: Tue Feb 15 17:42:47 2022] {AFNI_22.0.03:linux_openmp_64} 3dNwarpApply -prefix 0240-BOLD-EC-volreg-Nwarp -nwarp 'T1-NoSkull_shft_alBOLDEC_shft_WARP+tlrc. ' T1_to_T1_Allineate.aff12.1D -source 0240-BOLD-EC-volreg-mask_temp_shft+orig.\n[nikin@leviathan: Tue Feb 15 17:42:47 2022] {AFNI_22.0.03:linux_openmp_64} 3drefit -view tlrc 0240-BOLD-EC-volreg-Nwarp+orig\n[nikin@leviathan: Tue Feb 15 17:42:56 2022] {AFNI_22.0.03:linux_openmp_64} 3dmerge -doall -1blur_fwhm 6 -prefix 0240-BOLD-EC-volreg-Nwarp-blur6 0240-BOLD-EC-volreg-Nwarp+tlrc\n[nikin@leviathan: Tue Feb 15 17:43:00 2022] 3dDeconvolve -float -polort A -bucket bucket -errts 0240-BOLD-EC-volreg-Nwarp-blur6-ld -input 0240-BOLD-EC-volreg-Nwarp-blur6+tlrc. ; Output prefix: 0240-BOLD-EC-volreg-Nwarp-blur6-ld\n[nikin@leviathan: Tue Feb 15 17:43:03 2022] {AFNI_22.0.03:linux_openmp_64} 3dBandpass -band 0.01 0.08 -prefix 0240-BOLD-EC-volreg-Nwarp-blur6-ld-bp -input 0240-BOLD-EC-volreg-Nwarp-blur6-ld+tlrc~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_ANAT~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_OeISHhi9NupOyJKiW7ke4g~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Tue Feb 15 17:43:03 2022~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 2 0 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 0 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+      -125.7674       143.9874      -49.59417
+
+type  = float-attribute
+name  = DELTA
+count = 3
+              4             -4       4.000052
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+              4              0              0      -125.7674              0
+             -4              0       143.9874              0              0
+       4.000052      -49.59417
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+              4              0              0      -125.7674              0
+             -4              0       143.9874              0              0
+       4.000052      -49.59417
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 276
+      -71.85606       124.3745      -95.64823       145.2364       -97.8987
+       163.1548      -88.54015       204.9926      -70.57729       182.7178
+      -79.78972       112.2189      -82.50729       67.28493      -117.1612
+       75.81538       -141.679        81.5069      -135.3922       84.45438
+      -118.1239       85.60623       -126.846       63.28716      -120.3169
+       79.33218      -98.24679       105.2857      -69.99435       143.2295
+      -53.55295       178.9697      -64.66782       138.7278      -80.57899
+       102.0002      -92.64675       62.36573      -135.3472       83.28539
+      -107.0418        86.4606      -88.74317       67.77724      -41.78257
+       68.16016      -48.00041       84.00993      -49.05675       74.70654
+       -40.7436        77.1431      -44.59657       51.32874      -91.61616
+       40.99405      -123.9533       44.63627      -135.5761       80.61475
+      -126.9904       87.70574      -128.0261        78.7934      -115.6995
+       46.69722      -97.62205       43.58275      -133.4413       55.12828
+       -130.739       48.08265      -91.18074       38.95949      -50.36943
+       46.03044      -53.42704       90.18033      -55.49096       141.8271
+      -62.60918       152.9692      -80.62968       152.6574      -68.82865
+        124.252      -53.86672       111.3447      -39.81272       119.1174
+      -43.36118        129.411      -58.24904       129.3024      -43.36217
+       94.76104      -44.91152       49.88326      -44.16816       47.00251
+      -39.34139       59.37703      -46.93274       63.12686      -54.97339
+       67.44678      -55.02153       77.85768      -52.30325       87.20847
+      -76.24375       74.79295      -117.6285       64.77143      -144.2873
+        71.0079      -142.9356       66.69687      -111.4268       35.21822
+      -87.22674       28.38965      -73.86732       50.53188      -81.76863
+       58.94306      -77.51114       69.55723      -75.50114       80.31931
+      -71.92138        89.5704      -80.88023       69.06692      -67.17727
+       57.32816      -53.73641       51.34435      -72.71552       54.68691
+      -71.60889       69.53781      -83.74265       58.37214      -93.11912
+       52.44129      -94.51318       79.57176      -85.20987       91.41804
+      -84.26334        81.3448       -72.4904         106.86      -80.34477
+       127.1049      -97.07545       132.4367      -81.77663       220.0628
+      -118.0416       240.5829      -139.7227       179.7961      -167.9978
+       86.53854      -168.4146       94.01344      -158.8147       87.82991
+      -136.6007       69.76683      -101.2402       54.32001      -75.07146
+       60.68815      -78.15948       77.65427       -53.5671       120.5916
+      -83.12772       180.5124      -112.6967       191.2932      -115.1655
+       177.7335      -95.71977       154.8465      -79.03838       124.7431
+      -64.52999       102.6758      -96.09017       102.0108      -117.4724
+          82.79      -144.8672       120.8067      -158.0164       136.1165
+      -160.3679       107.2637      -135.5089       64.74083      -131.5439
+       82.93306      -118.9485       82.83939      -92.64056       67.39954
+      -74.29236       77.60261      -72.09666        80.9902       -81.0655
+       103.9336      -90.70917       87.25193      -95.32417       98.20277
+       -87.3409       98.04222      -93.96878       77.37545      -131.6848
+       74.50047      -171.7284       73.77292      -170.7363       82.91963
+      -118.2267       98.88909      -51.00901       109.5555      -50.26097
+       115.0396      -51.92358       103.3299      -75.45946       117.1552
+      -75.25978       136.7246      -66.05326       142.5637      -97.68609
+       87.18633       -86.0826       63.05423       -102.381       55.66028
+      -151.7087       53.80238       -147.133       59.90066      -112.3136
+       80.49349      -91.17748       79.38575      -80.53067       88.04826
+      -75.18696       114.6463      -68.27378       130.4573      -82.72662
+       102.8026      -114.6164        51.3579      -151.6492       61.95652
+      -192.4248       66.49798      -200.4034       54.35033       -151.657
+       60.74062
+
+type = integer-attribute
+name = TAXIS_NUMS
+count = 8
+ 138 0 77002 -999 -999
+ -999 -999 -999
+
+type  = float-attribute
+name  = TAXIS_FLOATS
+count = 8
+              0              2              0              0              0
+        -999999        -999999        -999999
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 138 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 64 64 32 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 138
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 138
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 590
+'#5~#6~#7~#8~#9~#10~#11~#12~#13~#14~#15~#16~#17~#18~#19~#20~#21~#22~#23~#24~#25~#26~#27~#28~#29~#30~#31~#32~#33~#34~#35~#36~#37~#38~#39~#40~#41~#42~#43~#44~#45~#46~#47~#48~#49~#50~#51~#52~#53~#54~#55~#56~#57~#58~#59~#60~#61~#62~#63~#64~#65~#66~#67~#68~#69~#70~#71~#72~#73~#74~#75~#76~#77~#78~#79~#80~#81~#82~#83~#84~#85~#86~#87~#88~#89~#90~#91~#92~#93~#94~#95~#96~#97~#98~#99~#100~#101~#102~#103~#104~#105~#106~#107~#108~#109~#110~#111~#112~#113~#114~#115~#116~#117~#118~#119~#120~#121~#122~#123~#124~#125~#126~#127~#128~#129~#130~#131~#132~#133~#134~#135~#136~#137~#138~#139~#140~#141~#142~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 138
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 5
+'ORIG~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~
