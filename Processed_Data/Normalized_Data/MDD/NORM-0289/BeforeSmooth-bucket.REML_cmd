@@ -1,0 +1,5 @@
+# 3dDeconvolve -float -polort A -errts 0289-BeforeSmooth-ld -bucket BeforeSmooth-bucket -input 0289-BOLD-EC-volreg-Nwarp+tlrc.
+
+3dREMLfit -matrix BeforeSmooth-bucket.xmat.1D -input 0289-BOLD-EC-volreg-Nwarp+tlrc. \
+ -Rbuck BeforeSmooth-bucket_REML -Rvar BeforeSmooth-bucket_REMLvar \
+ -Rerrts 0289-BeforeSmooth-ld_REML -verb $*

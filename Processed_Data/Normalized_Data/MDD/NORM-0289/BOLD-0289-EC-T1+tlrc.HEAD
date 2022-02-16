@@ -1,0 +1,111 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 130
+'[nikin@leviathan: Tue Feb 15 23:24:02 2022] {AFNI_22.0.03:linux_openmp_64} 3dUnifize -prefix BOLD-0289-EC-T1 -input ANAT-0289.nii~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_ANAT~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_grO8FYTEyTVms-1dDs_JmQ~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Tue Feb 15 23:24:02 2022~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 11 0 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 0 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+       -122.266       109.4741      -21.69164
+
+type  = float-attribute
+name  = DELTA
+count = 3
+              1             -1              1
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+              1              0              0       -122.266              0
+             -1              0       109.4741              0              0
+              1      -21.69164
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+      0.9995946    -0.02761969   -0.006861482       -122.266    -0.02847349
+     -0.9701375     -0.2408802       109.4741              0     -0.2409779
+      0.9705307      -21.69164
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 2
+              0           1500
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 1 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 256 256 180 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 1
+ 3
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 1
+              0
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 5
+'TLRC~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~
