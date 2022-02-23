@@ -1,0 +1,40 @@
+%% Package Declarations:
+\usepackage[a4 paper, margin=1in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+\usepackage[compact]{titlesec}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{colortbl}
+\usepackage{float}
+
+\usepackage{acronym}
+\usepackage{tocloft}
+\usepackage{setspace}
+\usepackage{url}
+\usepackage[hidelinks,linktoc=all]{hyperref}
+\usepackage[backend=biber,style=ieee]{biblatex}
+
+%% Configs
+
+\urlstyle{same}
+
+\onehalfspacing
+
+\definecolor{sea}{RGB}{175,255,215}
+
+\DeclareUnicodeCharacter{0301}{\'\i}
+
+\addto\captionsenglish{
+ \renewcommand{\contentsname}
+ {Table of Contents}
+}
+
+\addbibresource{./references.bib}
+
+% \setlength{\parindent}{0em}
+% \setlength{\parskip}{1.5pt}

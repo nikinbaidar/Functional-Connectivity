@@ -1,0 +1,74 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Preface}{i}{Doc-Start}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Abstract}{ii}{Doc-Start}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Figures}{iii}{Doc-Start}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Tables}{iii}{Doc-Start}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Abbreviations}{iv}{Doc-Start}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Major Depressive Disorder}{1}{subsection.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Neuroimaging}{1}{subsection.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3}Brain Networks}{2}{subsection.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4}Resting State Functional Connectivity}{3}{subsection.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Objectives}{5}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}General Objectives}{5}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Specific Objectives}{5}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Problem Statement}{6}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Need For An Imaging Basis}{6}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Reverse Inference Fallacy}{6}{subsection.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Review of Literature}{9}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Background}{9}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Functional Magnetic Resonance Imaging for the Assessment of MDD}{9}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Resting State Functional Connectivity of Hippocampal Networks}{10}{subsection.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}Overview of Hippocampal Circuitry and its Functions}{12}{subsection.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5}Important FCs for Diagnosis of MDD}{13}{subsection.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6}Structural Changes associated with MDD}{14}{subsection.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.7}Reverse Inference Fallacy in MDD}{15}{subsection.4.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Feasibility Study}{16}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Methodology}{17}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Methods and Materials}{17}{subsection.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Seed Based Functional Connectivity Analysis}{17}{subsection.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3}Region of Interest Selection}{18}{subsection.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4}fMRI Data Acquisition}{18}{subsection.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.5}Image Pre-processing}{19}{subsection.6.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.6}Statistical Analysis of Functional Connectivity}{19}{subsection.6.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Cost Estimations}{20}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Proposed Work Flow}{21}{section.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Conclusion}{21}{section.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{References}{22}{section.9}%

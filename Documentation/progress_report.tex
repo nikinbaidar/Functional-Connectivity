@@ -1,0 +1,812 @@
+\documentclass{article}
+\input{./preample}
+
+\begin{document}
+\input{./titlepage}
+
+\begingroup
+\fontsize{12pt}{11pt}\selectfont
+
+% preface
+\pagenumbering{roman}
+\clearpage
+\setcounter{page}{1}
+\hskip180pt {\textbf{\centering \Large Preface} }
+\vskip40pt
+\addcontentsline{toc}{section}{Preface}
+
+The basis for this project stemmed from the fact that not many
+researches have been conducted in Nepal regarding the diagnosis of
+mental disorders. Nonetheless, in other countries, many researches and
+studies have been conducted regarding the functional connectivity of
+different brain regions in depression and other mental
+disorders. However, till date, there is no solid evidence that could
+be used for the clinical diagnosis of mental disorders. Our project
+intends to review past researches and keep up with the studies related
+to Major Depressive Disorder and brain functional connectivity. In
+addition to that, we have selected hippocampal circuity as the region
+of interest for our purposes and the overall project is going to
+revolve around how functional connectivity of hippocampal network in
+MDD patients differ from that of healthy people.
+
+The following progress report begins with the basic concepts of the
+resting state functional connectivity of brain, different regions of
+brain and MR images. The concept of MR image processing, functional
+connectivity analysis will be used in the project. Making use of these
+concepts, our project approaches to compare and come up with a
+conclusion about how functional connectivity differs in MDD patients
+and how the findings of the project could play a role in diagnosis of
+MDD. In this project, the use of ``functional connectivity'' is
+restricted to mean quantification of the operational interactions of
+multiple spatially distinct brain regions that are not engaged in any
+specific task or stimulus. We will further restrict our discussion to
+connectivity measures of the hippocampal network, derived from fMRI
+imaging modality alone.  We are required to conduct this project as a
+part of the curriculum of Biomedical engineering. We hope to acquire a
+profound knowledge about MR image processing which would help us a lot
+in our career as biomedical engineers. \\ [1cm]
+
+\hspace*{137mm}\textbf{\textit {$-$ Authors}}
+\newpage
+
+%abstract
+\hskip180pt {\textbf{\centering \Large Abstract} }
+\vskip2pt
+  \addcontentsline{toc}{section}{Abstract}
+
+\newpage
+
+\thispagestyle{empty}
+\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+
+\thispagestyle{empty}
+\addcontentsline{toc}{section}{List of Tables}
+\listoftables
+\newpage
+
+% Abbreviations
+
+\begin{center}
+  \section*{Abbreviations}
+  \addcontentsline{toc}{section}{Abbreviations}
+\end{center}
+
+\begin{acronym}
+  \acro{AFNI}{Analysis of Functional Neuroimages}
+  \acro{BDI}{Beck Depression Inventory}
+  \acro{BOLD}{Blood Oxygen Level Dependent}
+  \acro{DSM}{Diagnostic and Statistical Manual of Mental Disorders}
+  \acro{fMRI}{Functional Magnetic Resonance Imaging}
+  \acro{HC}{Healthy Controls}
+  \acro{MDD}{Major Depressive Disorder}
+  \acro{MR}{Magnetic Resonance}
+  \acro{ROI}{Region of Interest}
+  \acro{rs}{Resting State}
+  \acro{rsFC}{Resting-state Functional Connectivity}
+  \acro{SCA}{Seed-based Correlation Analysis}
+  \acro{sMRI}{Structural Magnetic Resonance Imaging}
+\end{acronym}
+
+\newpage
+% table of contents
+\vskip -10pt
+\enlargethispage{\baselineskip}
+\thispagestyle{empty}
+\addcontentsline{}{}{}
+\tableofcontents
+\newpage
+
+\pagenumbering{arabic}
+\clearpage
+\setcounter{page}{1}
+
+\section{Introduction}
+
+So, based on our objective proposed, this refers to the progress
+report of our project till date along with the future works to be
+performed that completely meet our aims.
+
+\subsection{Background}
+
+Functional MRI is well established as a method for the detection and
+delineation of regions of the brain that change their level of
+activation in response to specific stimulus. fMR imaging modality
+is sensitive to fluctuations in the BOLD signal which reflects
+neuronal activation, or neuronal activity.
+
+The specific objective of this project is to perform seed-based
+functional connectivity analysis to study how the normal function of a
+particular area of a healthy brain gets disrupted in diseased
+condition. Major Depressive Disorder being one of the major mental
+health illness in our country, this project aims to analyze the
+functional changes in the brain of MDD patients compared to HC.
+Furthermore, in our literature review, it was found that the
+hippocampus of the brain is one of major regions affected by a variety
+of neurodegenerative and mental disorders. For this reason, we aim to
+assess the functional connectivity of the hippocampal region of the
+brain.
+
+\subsection{Rationale}
+
+The absence of biological markers makes it exceptionally difficult for
+neurologists to diagnose a person with a psychiatric disorder. The
+diagnostic procedures that are the gold standard for the diagnosis of
+neurodegenerative and psychiatric disorders, in the present day are
+wholly based on behavioral observations and patient reported symptoms,
+both of which do not have a molecular or radiological basis. Although
+there have been countless studies conceptualizing the possibility of
+implementation of various functional imaging modalities for
+deciphering the etiology and the functional affects of various mental
+disorders, the finding from these studies do not appear amongst the
+diagnostic criteria. A critical barrier to the clinical translation of
+many such findings is the reverse inference fallacy.
+
+The information from structural radiology modalities describe the
+shape, size and integrity of brain structure, but they do not provide
+any information about the brain function. Nonetheless, as we will
+discuss in the coming sections of this progress report, combining
+structural MRI and functional MRI can be a promising technique to
+characterize normal and abnormal brain function, which can act as an
+auspicious biomarker for neurodegenerative or psychiatric disorders to
+determine the risk, progression and therapeutic effectiveness. This
+project can lay the foundations for further research and development
+on this particular field.
+
+\section{Methodology}
+
+\subsection{Data Acquisition}%
+\label{sub:data_acquisition}
+
+For the following research, we acquired functional MR as well as T1 MR
+images of subjects from two distinct categories. The first set of
+subjects are categorized as healthy controls, and the second set of
+subjects are categorized as those who are suffering from major
+depression. The subjects from the first category, i.e. healthy
+controls will be referred to as ``HC'' and the subjects from the
+second category, i.e. depressed subjects will be referred to as ``MDD
+patients''. The functional and anatomical MR images for the
+progression of this study were acquired from the SRPBS Multidisorder
+MRI Dataset. The datasets included were obtained from the DecNef
+Project Brain Data Repository, which is a repository of neurological
+images gathered by a consortium as a part of the Japanese Strategic
+Research Program for the Promotion of Brain Science supported by the
+Japanese Advanced Research and Development Programs for Medical
+Innovation (AMED). Furthermore, the MR datasets included in this
+repository were diagnosed by trained and experienced neurologists,
+which assures that our study will be tilted more towards accuracy and
+efficiency.
+
+\subsection{Data Selection}%
+\label{sub:data_selection}
+
+The SRBPS dataset originally had the MR images of more than 1400
+volunteers. All of these volunteers have underwent a standardized
+clinical evaluation protocol, which included a general and
+neurological evaluation. This opts for the accuracy of our study. Out
+of these 1400 volunteers, 15 right-handed subjects from each category
+were manually picked. For MDD patients, only those volunteers were
+selected whose BDI was greater than 30.
+
+The age group of the selected subjects ranged from 30 to 50 and
+subjects of either sex, male or female were selected. Statistical
+tests were performed on the selected subjects to verify if the
+subjects from both categories are well-matched based on sex as well as
+age.
+
+to accuracy as manual analysis may create more chaos.After this, those
+analysed data are converted to nifti extension from DICOM followed by
+the conversion from 3D to 4D MRI Images.  Meanwhile, the structural
+brain MR-images are subjected to segmentation process through SPM.
+Further, the functional brain MR images are preprocessed. These tasks
+have been accomplished while our end goal is yet to be achieved which
+is to analyze the preprocessed images on the basis of their functional
+connectivity of both MDD and HC patients, comparing them and
+presenting the analysis.
+
+To meet our objective, we employed various computational tools like MS
+Excel, MRIcron, Octave, SPM(Statistical Parametric Mapping), AFNI
+(Analysis of Functional Neuroimages) in a LINUX Operating Environment.
+All these tools are open-source softwares that added feasibility to
+the progress of our objectives.
+
+
+Progress of this project includes Statistical t-test analysis of the
+separated data of both MDD and HC patients, deploying various
+computational tools for conversions, segmentation and preprocessing of
+the images till the date. First of all, literature review of papers
+and articles was done which helped us boost our theoretical knowledge
+and develop our own strategy to meet our project's objective.
+
+\subsection{fMRI Data Selection and Statistical Analysis}
+
+In this project, Data selection includes retrieving disparate types of
+data from DecNef Project Brain Data Repository. We retrieved 30 MRI
+images of public data set out of which 15 are MDD and 15 are HC. We,
+first, preferred to take the dataset with respect to the age and sex
+lying between 20 to 30 years age group but since the required dataset
+was not enough as per our decided number of patients, we extracted the
+patients of age group lying between 30 to 50 years. Also for gender,
+we decided to take equal number of male and female data, for that we
+selected equal number of male and female manually and to verify that,
+we performed Chi-squared test . To perform that test, we created a
+pivot table in MS Excel and then, we inserted the number of male and
+female in the pivot table.Then,applying the formula of chi-squared
+test in the table,we verified that the number of male and female data
+are equal.Now,for the age group, we performed t-test,so, we acquired
+the age of both MDD patients and HC in two rows and in MS Excel, we
+applied t-test (two tailed distribution) to check the validation of
+age group.
+
+\subsubsection{Chi-squared test}
+
+A chi-squared test is a statistical hypothesis test that is valid to
+perform when the test statistic is chi-squared distributed under the
+null hypothesis. Pearson's chi-squared test is used to determine
+whether there is a statistically significant difference between the
+expected frequencies and the observed frequencies in one or more
+categories of a contingency table. The purpose of the test is to
+evaluate how likely the observed frequencies would be assuming the
+null hypothesis is
+% true.[https://www.jmp.com/en_be/statistics-knowledge-portal/chi-
+% square-test.html] So,we performed this test for verification of the
+% equal
+presence of manually selected number of Male and Female which resulted
+out to be true.
+
+\subsubsection{t-test}
+
+A t-test is a type of inferential statistic used to determine if there
+is a significant difference between the means of two groups, which may
+be related in certain features. A t-test looks at the t-statistic, the
+t-distribution values, and the degrees of freedom to determine the
+statistical significance.
+[https://www.investopedia.com/terms/t/t-test.as p] So, we performed
+this test for the verification of the presence of desired i.e, 20 to
+30 years of age group of both MDD ans HC patients. Thus, from the
+large SRPBS public dataset, we extracted 15 MDD and 15 HC patients
+whose age group lie between 30 to 50 age group including equal number
+of male and female having BDI Index greater than 3 that indicated the
+accuracy to our project's analysis.
+
+\subsection{Data Conversion}
+
+Next step includes data conversion of extracted one i.e, the obtained
+public dataset is in DICOM format so, we basically converted those
+extracted data to NIFTI format for further processing compatibility.
+For this, in linux environment,we installed ,MRIcron (magnetic
+resonance image conversion, viewing and analysis) was installed using
+command 'sudo apt-get install' MRIcron so that we can load multiple
+layers of images, create volume renderings and draw region of
+interest. It also provides 'dcm2nii' tool that can convert DICOM
+format images to NIFTI format.DICOM(Digital Imaging and Communications
+in Medicine) is a standard, internationally accepted format used to
+view, store, retrieve and share medical images. NIfTI is the format
+that attempts to keep spatial orientation information. Many of the
+popular tools used for scientific image processing, analysis and
+visualization require images to be stored in the NIfTI file format,
+whereas scanners used to acquire these images usually export data in
+the DICOM format. DICOM standard is complicated and different scanner
+manufacturers extend the DICOM standard in a variety of ways,often
+resulting in duplication of information and incompatibilities between
+software only designed to work with one particular subset of DICOM.
+Therefore, while one conversion tool may work for many images, it may
+fail for others. So,the DICOM format images are converted to NIfTI
+format. During the installation it didn't meet the dependencies so
+the dependencies were corrected using command 'sudo apt --fix-broken
+install'. 'which dcm2niigui' command was used to check if the dcm2nii
+tool is present or not, '/usr/bin/dcm2niigui' if appeared then it
+indicates dcm2nii tool is installed. dcm2nii can be used in two ways
+either by dragging and dropping files onto the program or by launching
+dcm2nii from command line and specifying the options to use. We used
+the drag and drop method: firstly all the DICOM format images were
+placed into a folder followed by dragging and dropping of images onto
+dcm2nii one by one. The File/ModifyNIfTI command can be used to change
+existing NIfTI images which can guide us through selecting the images
+and choose how we'd like to modify the images(remove volumes, changing
+sub format, reorienting, or changing the order of the 3rd and fourth
+dimension). The Neuroimaging Informatics Technology Initiative (NIfTI)
+provides coordinated and targeted service, training, and research to
+speed the development and enhance the utility of informatics tools
+related to neuroimaging. NIfTI focuses on tools used in fMRI because
+fMRI is rapidly growing, and improvement in informatics tools will
+provide broad benefits for neuroscience and greater cost/benefit
+ratio. NIfTI is more useful and useable neuroimaging informatics tools
+that provides environment to facilitate convergence on common
+solutions to widespread problems and maximizes scientific
+opportunities from neuroimaging research. This format has been widely
+adopted in neuroimaging research, allowing scientists to mix and match
+image processing and analysis tools developed by different teams. For
+slice orientation other than axial, the image could be re-organized as
+if it were axial slice. This won’t cause any problem in terms of the
+NIfTI format, and may avoid confusion in some analysis and
+visualization tools. ( write about the script for nifti conversion
+Bloody no)
+
+\subsection{Skull stripping of rsfmri Images}
+
+Skull stripping is the process of isolating brain tissue from
+non-brain tissue from an MRI image of a
+brain. [https://www.analyticsvidhya.com/blog/2021/06/introduction-to-skull-stripping-image-segmentation-on-3d-mri-images/]
+Skull stripping may improve the robustness of the registration
+process, since high resolution structural images contain considerable
+amounts of non-brain tissue such as eyeballs, bone, skin, and other
+tissues. This step shows general improvement in the quality of the
+normalization and template congruence for skull-stripped images in
+every tissue category (whole brain, gray matter, white matter).Skull
+Stripping improves registration and normalization. Skull stripping
+consists of following three steps: 1) Volume is preprocessed to
+exclude gross spatial image non-uniformity artifacts the brain is
+repositioned in reasonable manner. 2) A spherical surface is
+iteratively expanded until the brain is enveloped. 3) Various masks
+and surfaces that models the brain and portions of the skull are
+created.
+% [https://reader.elsevier.com/reader/sd/pii/S2213158213001241?token=F773DAB7A62EA6DF418D1A8B3EDB16A9D4579350603E8B1B4E431FFB44C3CC6143E846DA0E48A556068EF5E0ABCD5CBA&originRegion=eu-west-1&originCreation=20220216102651]
+
+3D skull-stripping is done on T1 image(structural images of brain)
+using the command: Command: 3dSkullStrip -input filename -prefix
+
+We run this command in LINUX terminal by selecting the T1 images of
+specific folders of MDD and HC patients, we isolated the brain tissue
+from non-brain tissue of all T1 images of MDD and HC patients. So as
+to view the isolated brain tissue of fMRI data of each patient's
+brain, we viewed the skull stripped brain images on the MRIcron by
+properly selecting the T1 images of each MDD ad HC subjects.
+
+
+\subsection{Image Segmentation}
+
+Segmentation is the most important part in image processing. Fencing
+off an entire image into several parts which is something more
+meaningful and easier for further process. These several parts that
+are rejoined will cover the entire image. Segmentation may also depend
+on various features that are contained in the image. It may be either
+color or texture. Before de-noising an image, it is segmented to
+recover the original image. The main motto of segmentation is to
+reduce the information for easy analysis. Segmentation is also useful
+in Image Analysis and Image Compression.{cite1}
+
+In our project, segmentation is done to identify grey matter, white
+matter and CSF from the fMRI images of the brain. So, we proceed the
+segmentation process using SPM(Statistical Parametric mapping).
+Segmentation in SPM can work with images collected using a variety of
+sequences , but the accuracy of the resulting segmentation will depend
+on the particular properties of the images.
+
+SPM (Statistical Parametric Mapping) is an fMRI analysis software
+package that is run in Matlab. So, first installed MATLAB which would
+require the MATLAB licensing that would ultimately add cost to our
+project. Thus, We preferred to install Octave instead of MATLAB since
+Octave being open source software.
+
+\subsubsection{Octave}
+
+Octave is a high-level interpreted language,
+primarily intended for numerical computations. It provides
+capabilities for the numerical solution of linear and nonlinear
+problems, and for performing other numerical experiments. It also
+provides extensive graphics capabilities for data visualization and
+manipulation. Octave is also known as GNU Octave.It is mainly used in
+solving the linear and non linear problems numerically, and for
+performing numerical experiments it is mostly compatible with MATLAB.
+It mainly consists of function calls or script. Its syntax is mainly
+matrix-based and provides various functions for matrix operations.
+Octave does support various data structures and object-oriented
+programming. It has great features and compatible with other languages
+like syntax and functional compatibility for MATLAB. It shares other
+features like built-in support for complex numbers, powerful built-in
+math functions, and extensive function libraries and in terms of
+user-defined functions as well. Octave is normally used
+through its interactive command line interface, but it can also be
+used to write non-interactive programs. The Octave language is quite
+similar to Matlab so that most programs are easily portable.
+
+\subsubsection{SPM12}
+
+SPM(Statistical Parametric Mapping) refers to the
+construction and assessment of spatially extended statistical
+processes used to test hypotheses about functional imaging
+data.{cite0}SPM runs in the octave package. SPM requires the image
+data in a suitable format. Here, data used is in nifti format. There
+are two main forms of nifti – here used form is ``.nii''files , which
+combines all the information into one file. Nifti images can be
+single 3D volumes, but 4D or even 5D images are possible. VBM
+Pre-processing in SPM12 include: Use of Segment for characterising
+intensity distributions of tissue classes, and writing out
+``imported'' images that DARTEL can use. Run DARTEL to estimate all
+the deformations.
+
+\subsubsection{Image Segmentation Process}
+
+Segmentation is done to identify grey and white matter. Grey matter
+contains high densities of unmyelinated (lacking a myelin sheath)
+neurons, white matter contains high densities of myelinated neurons
+and CSF is contained in large amount in ventricles. Segmentation in
+SPM can work with images collected using a variety of sequences, but
+the accuracy of the resulting segmentation will depend on the
+particular properties of the images. Although multiple scans of each
+subject were available, the dataset to be used only includes the
+T1-weighted scans. For greater accuracy of registration, the tissues
+of our anatomical image need to be accurately mapped to the tissues of
+template. Segmentation can be found within SPM-Spatial-Segment in the
+batching system. The output of segmentation will be used for achieving
+more accurate inter-subject alignment using DARTEL. In this project,
+data used were a selection of T1-weighted scans of healthy
+control(HC).
+
+\subsubsection{Image Segmentation Algorithms}
+
+There are various techniques used in image segmentation.following are
+some methods:
+
+1) Region based segmentation Region based segmentation
+is of two types:
+
+a) Threshold Segmentation: In this segmentation technique, image gray
+scale information processing is directly divided based on the gray
+value of various targets. Segmentation effect can be obtained if the
+target and background have high contrast. following are the types of
+Threshold segmentation:
+
+i) local threshold method: In this method multiple segmentation
+thresholds are selected and images are divided into multiple target
+regions and backgrounds using multiple thresholds.
+
+ii) Global threshold method: In this method image is divided into two
+regions of target and background using a single threshold.
+
+b) Regional growth segmentation: Firstly a
+seed pixel is selected and eventually similar pixels are merged around
+seed pixel into the region, where seed pixel is located.
+
+2)Edge detection segmentation:
+
+A gray edge between two adjacent regions with different gray values is
+always present in the image and case in which the gray value is not
+continuous. Those discontinuities are detected using derivative
+operations(derivatives are calculated using differential operators).
+Generally, Parallel edge detection is used as a technique of image
+preprocessing, which is done by means of a spatial domain differential
+operator so as to perform image segmentation by convolution of its
+template and image.
+
+3)Segmentation based on clustering:
+
+In this technique, the pixels in image space are segmented with
+corresponding feature space, which is then segmented and mapped back
+to original image space so as to generate segmentation outcome.
+k-means is the most common clustering algorithm used. It basically
+gathers samples into different clusters based on the distance. For the
+achievement of compact and independent clusters as clustering targets
+the two points need to closer.
+
+As we are mainly concerned with the grey matter, white matter and CSF
+of HC fMRI Images, we chose the tissues associated to grey matter,
+white matter and CSF only along with the respective native tissues
+being selected as "Native+DARTEL". After everything had been set up,
+the image segmentation starts. As a result, there should be a bunch of
+new images files generated. Files containing ``c1'' in their name are
+what the algorithm identifies as grey matter. If they have a ``c2''
+then, they are supposed to be white matter. The `` c3'' images, are
+CSF.
+
+\subsubsection{DARTEL}
+
+DARTEL (Diffeomorphic Anatomical Registration Through Exponentiated
+Lie Algebra) The idea behind DARTEL is to increase the accuracy of
+inter-subject alignment by modeling the shape of each brain using
+millions of parameters. DARTEL works by aligning grey matter among the
+images, while simultaneously aligning white matter. This uses the
+imported ``rc1'' and ``rc2'' images, and generates ``u\_rc1'' files,
+as well as a series of template images. Main idea of DARTEL is to
+register images by computing a flow field which can then be
+exponentiate to generate both forward and backward deformations .We
+need DARTEL because it allows an accurate inter-subject registration
+of brain images which is necessary for both proper separation of
+different segment , different tissue classes and after it gets
+specially normalized towards common global MNI we will be able to do
+group wise statistics and to extrapolate those findings to result of
+other studies. Processing begins with the ``import'' step. This
+involves taking the parameter files produced by the segmentation, and
+writing out rigidly transformed versions of the tissue class images,
+such that they are in as close alignment a possible with the tissue
+probability maps. The next step is the registration itself. This
+procedure begins by creating a mean of all the images, which is used
+as an initial template. Deformations from this template to each of the
+individual images are computed, and the template is then re-generated
+by applying the inverses of the deformations to the images and
+averaging. This procedure is repeated a number of times. After
+running DARTEL by selecting the previously generated c1, c2, c3 images
+of all the fMRI images of HC,the file names beginning with ``r'' (as
+in ``rc1'') are the DARTEL imported versions of the tissue class
+images, which will be aligned together next.
+
+\subsection{Image Preprocessing}
+
+Structural radiology modalities such as an MRI or a CT only provides
+information about brain anatomy. Nonetheless, nuclear MRI provides
+enough information about the structure of the brain that complements
+functional MRI in a number of ways. Since, the brain function
+ultimately depends on the integrity of the brain structure, the
+underlying tissue integrity allows one to examine the functional
+signals. Essentially, structural MRI provides an anatomical reference
+for visualization of activation patterns and regions of interest to
+extract functional connectivity information.
+
+fMRI image preprocessing is basically
+done to improve the quality of the image so as to analyse it in a
+better way. Preprocessed images can suppress undesired distortions
+and enhance some features which are necessary for the particular
+application we are working for. An fMRI volume contains not only the
+signal that we are interested in, changes in oxygenated blood but also
+fluctuations that we are not interested in, such as head motion,
+random drifts, breathing, and heartbeats.These other fluctuations are
+noise, which are to be separated from the images or its region that we
+are interested in.
+
+fMRI images are of lower resolution because they are collected at a
+very fast rate. So, they are needed to be
+
+1) reconstructed
+2) renamed,
+3) made into 3D bricks
+4) reregistered (to correct for head movement),
+5) deconstructed
+6) formatted into another type of image file, and
+7) normalize
+
+\subsubsection{AFNI}
+
+Analysis of Functional Neuro Images is an open-source environment for
+processing and displaying functional MRI data which is a technique for
+mapping human brain activity. AFNI is a set of programs that can be
+used interactively or flexibly assembled for batch processing using
+shell script. It is developed for the analysis and display of multiple
+MRI modalities such as anatomical, functional MRI (FMRI) and diffusion
+weighted data. It is freely available for research purposes. AFNI
+allows researchers to overlay a functional image to the anatomical,
+providing tools for aligning the two into the same space.
+
+The AFNI performs the following pre-processing steps and finish along
+with a basic regression analysis:
+
+1.Slice timing: Each 3D brain image is composed of multiple 2D images
+or slices. Although acquired at approximately the same time, up to
+several seconds could separate the first slice acquired from the last.
+Through interpolation, the slices are aligned to the same time point.
+Generally, any introduced noise from interpolation errors is thought
+to be outweighed by improvements in signal.
+
+2.Motion correction: Head movements can create sources of error in the
+analysis. Each 3D acquisition in a scan is collected on a 3D grid,
+with each small cube of grid space which is also called voxel.
+Representing a single image intensity value. Ideally, voxels will
+always represent the same part of the brain in each acquisition,
+rather than vary from one 3D image to the next. To correct small
+motion artifacts, AFNI' s motion correction tool employs a linear
+least squares algorithm that attempts to align each 3D image acquired
+to the first image acquired in the scan.
+
+3.Smoothing: To reduce random noise in the image, a smoothing is
+applied. While smoothing can increase the signal-to-noise ratio of
+the image, it reduces image resolution.
+
+
+4.Mask: Removes any non-brain areas, such as skull, from
+the fMRI image. 5.Scale: Scale each voxel so that changes in
+intensity represent percentage of signal change over the course of the
+scan. The default sets the mean of each voxel equal to 100.
+
+To initialize the preprocessing steps sequentially, we run various
+scripts as indicated
+
+1) Prep-2-BOLD-EC-preproc.sh
+2) Prep-3-BOLD-EC-align-to-anat-MNI1.sh
+3) Prep-7-reCovariates
+
+All these scripts contains various commands that are used in image
+preprocessing in AFNI.
+
+1) Prep-2-BOLD-EC-preproc.sh
+
+3dcalc - What it does- This program does voxel-by-voxel arithmetic on
+3D datasets. Why we used it- To convert DICOM files to AFNI format
+and then exclude the first 4 TRs.
+
+3dDespike - What it does- It removes 'spikes' from the 3D+time input
+dataset and writes a new dataset with the spike values replaced by
+something more pleasing to the eye.
+
+3dToutcount -automask: It calculates number of 'outliers' a 3D+time
+dataset, at each time point. So it is used to count the outliers at
+each TRs. Using base command, TR with less is detected and use that TR
+with least outliers as base for head motion correction and spatial
+normalization.
+
+3dvolreg- The AFNI command to perform motion correction and estimate
+spatial deviations between the reference functional image and other
+functional images using each of the movement parameters like base,
+tshift
+
+3dAutomask- It is used for the brain masking of the obtained subject.
+
+3dcalc- It helps to maskout the functional BOLD outside of the brain.
+
+
+
+2) Prep-3-BOLD-EC-align-to-anatomical-MNI1.sh This scripts includes
+following command that are run on the
+
+3dUnifize - What it does- Bascially white matter in T1-weighted images
+is made reasonably uniform in intensity,through the brain regions.
+Why we used it-we use the 3dUnifize program to (approximately)
+spatially uniformize and normalize intensities throughout the brain
+region, which helps in the matching process, especially when using
+datasets from different scanners.
+
+@Align\_Centers- We've used @Align\_Centers twice in the script.
+1st)Moves the center of DSET to the center of BASE.BASE: Base volume,
+typically a template. DSET is typically an anatomical dset to be
+aligned to BASE. Options used: -cm : Center is the center of mass of
+the volume. Why we used it- to roughly move the center of the base
+image of BOLD data with the anatomical data of each subject.
+2nd)roughly moves the center of the aligned anatomical data with
+standard anatomical template in the TT\_icmb space. Options used:
+-child: A bunch of datasets, originally in register with DSET, that
+should be shifted in the same way.
+
+align\_epi\_anat.py- This Python script computes the alignment between
+two datasets, typically an EPI and an anatomical structural dataset,
+and applies the resulting transformation to one or the other to bring
+them into alignment. Options used: -volreg off : to not perform
+volume registration on EPI dataset before alignment -tshift off : to
+not perform time shifting of EPI dataset before alignment -anat2epi :
+align anatomical dataset to EPI dataset (default) master\_anat:
+-master grid resolution for anatomical to epi output -epi\_base: Base
+sub-brick to use for alignment.Choose sub-brick number or statistic
+type(for example, 0,5,mean) -anatomical\_has\_skull no :anatomical is
+assumed to have no skull epi\_strip:method to mask brain in EPI data.
+Why we used it- to linearly align the anatomical data to BOLD data.
+
+ln - This makes link between files.
+
+3dAllineate- It is a program to align one dataset (the 'source') to a
+'base' dataset, using an affine (matrix) transformation of space.
+Options used: -cmass = Use the center-of-mass calculation to determin
+an initial shift [This option is OFF by default] -autoweight = Compute
+a weight function using the 3dAutomask algorithm plus some blurring of
+the base image. lpa- it allows autoweight -source\_mask sss = Mask
+the source (input) dataset, using 'sss
+
+
+3dQwarp- This program computes a nonlinearly warped version of
+source\_dataset to match base\_dataset. Why we used it? - To produce
+a dataset warped to match the TTicbm template. Since the I152 template
+is already somewhat blurry, the amount of blurring applied to it is
+set to zero, and also the source dataset will be Gaussian blurred with
+a FWHM of 0 mm. After using 3dQwarp he source dataset is warped to
+match the base and gets prefix as output.
+
+
+3dCopy - This program will copy all datasets using the old\_prefix to
+use the new\_prefix.
+
+3dNwarpApply - Program to apply a nonlinear 3D warp saved from 3dQwarp
+to a 3D dataset, to produce a warped version of the source dataset.
+Options used: -master mmm = 'mmm is the name of the master dataset,
+which defines the output grid. -nwarp option has two filenames inside
+single quotes,this feature tells that program to compose (catenate)
+those 2 spatial transformations before applying the resulting warp.
+Why we used it? -to apply the nonlinear transformation and resample to
+3x3x3 mm
+
+3drefit -This program changes some of the information inside a 3D
+dataset's header. Options used: -view code- Changes the 'view' to be
+'code', where the string 'code' is one of 'orig', 'acpc', or 'tlrc'.
+Why we used it?- to convert orig view to tlrc view.
+
+3dDeconvolve - Program to calculate the deconvolution of a measurement
+3D+time dataset with a specified input stimulus time series. Options
+used: [-polort pnum]- -polort option allows the use of 'A' to set the
+polynomial order automatically.   The purpose of '-polort' is to
+build the columns of the regression matrix. Why we used it? 1-to get
+tissuse-based signal before smooth. 2-linear detrending
+
+3dBandpass-This program is similar to 3dFourier. This is a program to
+lowpass and/or highpass each voxel time series in a dataset. Options
+used: -band fbot ftop = Alternative way to specify passband
+frequencies. fbot = lowest frequency in the passband, in Hz ftop =
+highest frequency in the passband (must be > fbot) -retrend -any mean
+and linear trend are removed before filtering.
+
+3dmerge - This program has 2 different functions: (1) To edit 3D
+datasets in various ways (threshold, blur, cluster, ...); (2) To merge
+multiple datasets in various ways (average, max, ...). Either or both
+of these can be applied. Options used: -doall = Apply editing and
+merging options to all sub-bricks uniformly in a dataset. Why we used
+it? -For spatial smoothing. Specifically :to apply a 6mm FWHM(Full
+Width at Half maximum) Gaussian blur
+
+3) Prep-7-reCovariates
+
+
+(left)
+
+
+\section{Results and Discussions}
+
+The methods mentioned above are brought into implementation stepwise
+and its results are mentioned amd discussed below.
+
+\subsection{Data Selection and Conversion}
+
+The total fMRI data of 15 MDD and 15 HC of age group between 20 to 50
+years with equal number of male and female were accurately obtained
+and both the chi square test and t-test resulted out to be true and
+those dataset were further converted to the nifti extension from DICOM
+format so at to establish the compatibility in AFNI environment.
+
+
+( add picture of ms excel and nifti conversion what?)
+
+\subsection{Skull Striping}
+
+By running the command of 3dskullstrip, the
+scans of skull were removed from the structural images i.e, T1 images
+of all the subjects. The skull stripped structural images of all
+subjects were viewed in MRIcron so as to conform the error free
+command execution.
+
+
+( skull stripped images)
+
+3.4 nikin Image Segmentation Running the HC subjects for segmentation
+process, results the formation of rc1 images for grey matter, rc2
+images for white matter and rc3 images for CSF that will be used for
+the common masking. (segmented images)
+
+3.5 nikin Scripts Preprocessing
+
+\section{Conclusion and Further Work}
+
+In a nutshell, the extracted dataset are statistically analysed so as
+to obtain the accuracy which would remove the differences that are
+created from manual analysis. All the MDD and HC subjects are also
+converted to NIFTI format to access in the AFNI formats from
+DICOM.Also, we successfully segmented the structural images of HC that
+resulted in isolation of grey matter, white matter and CSF which will
+further be used in common masking. Also, the images are skull
+stripped using AFNI commands to each subjects and are further used to
+preprocessed so that the images would be free from noises and any
+distortions by running bash scripts to each subjects.Thus these are
+the tasks that are performed so far to meet our objectives and
+successfully achieved our hypothetical results. Mentioning about our
+further works,in a preprocessed images,statistical tests will be
+implemented to for a thorough analysis of the functional connectivity
+of the seed. Specifically, we plan to assess functional connectivity
+between various regions of the brain and hippocampal area. To assess
+functional connectivity in the brain region, Resting-state analyses,
+that is, time series correlations in BOLD fMRI data acquired in a
+task-free state will be used. A statistical approach to image analysis
+makes it possible to discover spatial and temporal patterns that
+correspond to the performance of specific tasks and specific
+diagnoses. Such statistical methods have only begun to be applied to
+clinical disorders but show promise for increasing the ``specificity''
+of brain imaging markers for mental illness.
+
+\section*{References}
+\addcontentsline{toc}{section}{References}
+\printbibliography[heading=none]
+
+\section*{Appendix}
+\addcontentsline{toc}{section}{Appendix}
+
+\appendix
+
+\section{Hello}
+
+
+
+\endgroup % Font is restored to 10pt
+
+\end{document}
