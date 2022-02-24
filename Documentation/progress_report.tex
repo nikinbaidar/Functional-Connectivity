@@ -3,9 +3,7 @@
 
 \begin{document}
 
-\begingroup
-  \fontsize{12pt}{14pt}\selectfont
-  \includepdf[pages=-]{./titlepage.pdf}
+\includepdf[pages=-]{./titlepage.pdf}
 
 % preface
 \pagenumbering{roman}
@@ -95,16 +93,27 @@ MDD patients differ from that of healthy people.
 
 \section{Introduction}
 
-So, based on our objective proposed, this refers to the progress
-report of our project till date along with the future works to be
-performed that completely meet our aims.
+The following is the progress report of our project. We have briefly discussed
+individual tasks performed since the commence of out project till the reporting
+period. Our project aims to perform analysis of the functional connectivity of
+the hippocampus in patients suffering from Major Depressive Disorder and
+acquire a comprehensive idea about how the functional connectivity in the
+hippocampus region changes in people who are suffering from major depressive
+disorder compared to healthy controls.
 
-Functional MRI is well established as a method for the detection and
-delineation of regions of the brain that change their level of
-activation in response to specific stimulus. fMR imaging modality
-is sensitive to fluctuations in the BOLD signal which reflects
-neuronal activation, or neuronal activity.
-
+Functional connectivity is the communication between distinct brain
+regions that are not anatomically connected but remain simultaneously
+active while performing cognitive tasks. In this project we will
+assess the resting state functional connectivity, which essentially is
+the functional connectivity of various brain regions in resting state.
+Functional Magnetic Resonance Imaging (fMRI) is a well established
+imaging technique for the detection and delineation of the brain,
+based on the measure of neural activation in the brain. The fMR
+imaging modality is sensitive to fluctuations in the BOLD signal which
+reflects neuronal activation, or neuronal activity. This sensitivity
+allows fMRI technique to localize the exact location of activity in
+the brain which is caused due to sensory stimulation or cognitive
+function.
 
 \subsection{Background}
 
@@ -135,17 +144,20 @@ disorders, the findings from these studies do not appear amongst the
 diagnostic criteria. A critical barrier to the clinical translation of
 many such findings is the reverse inference fallacy.
 
-The information from structural radiology modalities describe the
-shape, size and integrity of brain structure, but they do not provide
-any information about the brain function. Nonetheless, as we will
-discuss in the coming sections of this progress report, combining
-structural MRI and functional MRI can be a promising technique to
-characterize normal and abnormal brain function, which can act as an
-auspicious biomarker for neurodegenerative or psychiatric disorders to
-determine the risk, progression and therapeutic effectiveness. This
-project can lay the foundations for further research and development
-in this particular field.
-
+Since neurological disorders are multifaceted and are influenced by
+more than one factors and neuroimaging results can be heavily
+influenced by external factors such as patient movement and
+instrumental artifacts.  The information from structural radiology
+modalities describe the shape, size and integrity of brain structure,
+but they do not provide any information about the brain function.
+Nonetheless, as we will discuss in the coming sections of this
+progress report, combining structural MRI and functional MRI can be a
+promising technique to characterize normal and abnormal brain
+function, which can act as an auspicious biomarker for
+neurodegenerative or psychiatric disorders to determine the risk,
+progression and therapeutic effectiveness. This project can lay the
+foundations for further research and development in this particular
+field.
 
 \newpage
 \section{Methodology and Review on Individual Tasks}
@@ -213,7 +225,6 @@ controls will be referred to as ``HC'' and the subjects from the
 second category, i.e.~depressed subjects will be referred to as ``MDD
 patients''.
 
-\newpage
 \subsection{Data Selection}%
 \label{sub:data_selection}
 
@@ -285,6 +296,9 @@ image data that we acquired were converted into appropriate formats
 that could be used for further processing. The original image data
 that we acquired were in DICOM image format.
 
+The following is a brief summary of the tasks performed during this
+step:
+
 \begin{table}[H]
   \centering
   \begin{tabular} {| m{3.3cm} | m{11.5cm} | }
@@ -331,38 +345,17 @@ that we acquired were in DICOM image format.
 Furthermore, once the image data were converted into the NIfTI format,
 which could be understood by a variety of software tools that we use,
 the multiple 3D rsfMRI image data was converted into a single 4D BOLD
-data for each subject from either category.
+data for each subject from either category. This step was necessary
+because, unlike an anatomical MR image which is a single volume, a
+functional MR image is acquired in blocks, where each block represents
+the functional MR signal acquired at a given time. Therefore is
+essential to merge these multiple 3D functional MR image volumes into
+a single 4D functional MR image, where time is the fourth dimension.
+To achieve this, we use a graphical file conversion tool called
+dcm2nii. The graphical interface was used to select all the 3D rsfMRI
+volumes to create a compressed file format containing the 4D BOLD
+data.
 
-\begin{table}[H]
-  \centering
-  \begin{tabular} {| m{3.3cm} | m{11.5cm} | }
-    \hline
-    \multicolumn{2}{|c|}{Conversion of 3D fMRI image into 4D BOLD Data} \\ \hline
-    Status during the reporting period & Completed   \\ \hline
-    Actions &
-    A file conversion tool called dcm2nii with a graphical user
-    interface was used to select all the 3D rsfMRI volumes to create a
-    compressed file format containing the 4D BOLD data.  \\ \hline
-
-    Decisions &
-    \begin{itemize}
-
-      \item Unlike an anatomical MR image which is a single volume, a
-        functional MR image is acquired in blocks, where each block
-        represents the functional MR signal acquired at a given time.
-        It is essential to merge these multiple 3D functional MR image
-        volumes into a single 4D functional MR image, where time is
-        the fourth dimension.
-
-    \end{itemize} \\ \hline
-
-    Testing \& Verification &
-    This step didn't require any testing. Nonetheless, the compressed
-    file was decompressed and its size was checked to verify it was
-    greater than 0 bytes.  \\
-    \hline
-  \end{tabular}
-\end{table}
 
 After these two steps, our image data for both HCs as well as MDD
 patients were prepared for further processing.
@@ -564,35 +557,37 @@ it gets specially normalized towards common global MNI we will be able
 to do group wise statistics and to extrapolate those findings to
 result of other studies.
 
-Processing begins with the ``import'' step.  This involves taking the
-parameter files produced by the segmentation, and writing out rigidly
-transformed versions of the tissue class images, such that they are in
-as close alignment as possible with the tissue probability maps. The
-next step is the registration itself.  This procedure begins by
-creating a mean of all the images, which is used as an initial
-template. Deformations from this template to each of the individual
-images are computed, and the template is then re-generated by applying
-the inverses of the deformations to the images and averaging. This
-procedure is repeated a number of times.  After running DARTEL by
-selecting the previously generated c1, c2, c3 images of all the fMRI
-images of HC,the file names beginning with ``r'' (as in ``rc1'') are
-the DARTEL imported versions of the tissue class images, which will be
-aligned together next.
+The following is a brief summary of the tasks performed during this
+step:
+
+% Processing begins with the ``import'' step.  This involves taking the
+% parameter files produced by the segmentation, and writing out rigidly
+% transformed versions of the tissue class images, such that they are in
+% as close alignment as possible with the tissue probability maps. The
+% next step is the registration itself.  This procedure begins by
+% creating a mean of all the images, which is used as an initial
+% template. Deformations from this template to each of the individual
+% images are computed, and the template is then re-generated by applying
+% the inverses of the deformations to the images and averaging. This
+% procedure is repeated a number of times.  After running DARTEL by
+% selecting the previously generated c1, c2, c3 images of all the fMRI
+% images of HC,the file names beginning with ``r'' (as in ``rc1'') are
+% the DARTEL imported versions of the tissue class images, which will be
+% aligned together next.
 
 \begin{table}[H]
   \centering
   \begin{tabular} {| m{3.3cm} | m{11.5cm} | }
     \hline
-    \multicolumn{2}{|c|}{Segmentation of Gray matter, White matter and
-    CSF} \\ \hline
-    Status during the reporting period   & Completed. (The results of
-    segmentation are improper for certain subjects so this needs to be
-    redone)   \\ \hline
+    \multicolumn{2}{|c|}{Creating DARTEL Templates} \\ \hline
+    Status during the reporting period   & Completed \\ \hline
     Actions &
-    Used the interactive GUI of SPM12 to automatically identify and
-    segment different tissue types within the images. A batch of
-    T1 scans to be segmented were specified, along with a list of
-    tissues that were to be identified.  \\ \hline
+    DARTEL was used to achieve a more accurate alignment of tissues
+    classes of various all the subjects. DARTEL can be accessed from
+    the interactive GUI of SPM12 and multiple files can be specified
+    for batch processing. DARTEL iterates over the specified files and
+    automatically generates the templates.
+    \\ \hline
 
     Decisions &
     \begin{itemize}
@@ -626,7 +621,13 @@ aligned together next.
 
 \subsection{Image Preprocessing}
 
+Image pre-processing is the most important aspect of our project.
+Pre-processing is performed to improve the signal quality of the raw
+data obtained from the MRI scanner. Image pre-processing involves
+steps like artifact detection, baseline correction, realignment,
+movement correction, co-registration, normalization, and smoothing.
 The image preprocessing is entirely done with AFNI.
+
 The following image preprocessing steps were accomplished:
 
 \subsubsection{Preprocessing of BOLD fMR Images}%
@@ -902,6 +903,50 @@ Width at Half maximum) Gaussian blur
 
 The following section discusses on the results achieved after the
 above steps:
+
+\subsection{Data Selection}%
+\label{sub:data_selection}
+
+The following image represents an excel table for the selected
+participants.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{./.img/excel-subjects.png}
+  \caption{Excel table containing selected subjects}%
+  \label{fig:}
+\end{figure}
+
+Once the participants were selected, statistical tests were performed
+to test the goodness of fit based on age and sex.
+
+\newpage
+The results of the statistical tests were as follows:
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./.img/Excel-ttest.png}
+  \caption{Pivot table for T-Test}%
+  \label{fig:}
+\end{figure}
+
+For the t-test, our null hypothesis is that the true age
+difference between the subjects from the two categories are zero.
+Since, the p-value is greater than 0.05, we accept our hypothesis and
+conclude that the selected subjects are well-matched based on their
+age.
+
+\enlargethispage{\baselineskip}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{./.img/chi-test-excel.png}
+  \caption{Pivot table for Chi-square Test}%
+  \label{fig:}
+\end{figure}
+For, the chi-square test, out null hypothesis is that there is no
+significant difference between observed and expected frequency of
+males and females. Since, the p-value is greater than 0.05, it means
+the selection of males and females have equal probability.
 
 \subsection{Preprocessing Results}%
 \label{sub:preprocessing_results}
@@ -1383,7 +1428,6 @@ popd
 
 \endgroup
 
-\endgroup
 
 \section{Gantt Chart (Unchanged)}%
 \label{sec:gantt_chart_unchanged_}
