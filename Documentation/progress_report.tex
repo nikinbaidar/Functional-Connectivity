@@ -33,8 +33,29 @@ MDD patients differ from that of healthy people.
 
 %abstract
 \hskip180pt {\textbf{\centering \Large Abstract} }
-\vskip2pt
+\vskip40pt
   \addcontentsline{toc}{section}{Abstract}
+
+  \noindent
+  The following document is the progress report of the task that have
+  been accomplished so far. The data selection and group matching
+  based on age and sex is attained from statistical
+  analysis.Preprocessing of fMRI images is necessary to remove
+  unwanted artifacts and transform the data into a standard format.The
+  neuroimaging data processing tools that are used to carry out
+  preprocessing are SPM, AFNI.Preprocessing steps:Removing first few
+  TR scans, despising, skull stripping,Slice timing correction, motion
+  correction has been completed. After that segmentation of images
+  using segmentation feature in SPM12 has been achieved.The
+  normalization and smoothing preprocessing steps are in
+  progress.Additional works to achieve these results include
+  conversion of fMR images to compatible format using
+  MRIcron,documentation of various AFNI commands that are used in
+  preprocessing steps. Before, calculating functional connectivity,
+  covariates are needed to be removed. Future works include: removal
+  of covariates, region of interest drawing and functional
+  connectivity analysis and finally the statistical analysis to
+  compare the Healthy controls and MDD patients.
 
 \newpage
 
@@ -42,10 +63,10 @@ MDD patients differ from that of healthy people.
 \addcontentsline{toc}{section}{List of Figures}
 \listoffigures
 
-\thispagestyle{empty}
-\addcontentsline{toc}{section}{List of Tables}
-\listoftables
-\newpage
+% \thispagestyle{empty}
+% \addcontentsline{toc}{section}{List of Tables}
+% \listoftables
+% \newpage
 
 % Abbreviations
 
@@ -513,14 +534,6 @@ description during image segmentation:
       \item Segmentation was only performed for T1-weighted images of
         healthy controls.
 
-      \item The version of GNU Octave that we used for segmentation
-        had a slight bug which needed manual intervention before the
-        images could be segmented. The source code for the
-        segmentation script had to be modified.
-
-      \item Some members of the team opted for an older version of
-        Octave.
-
     \end{itemize} \\ \hline
 
     Testing \& Verification &
@@ -758,9 +771,8 @@ EPI fMRI image to specific brain regions in the T1-weighted image.
     \begin{itemize}
 
       \item It was decided that we will use the standard TT\_icmb452
-        brain
-        atlas in talairach space as the template for normalizing our
-        image data.
+        brain atlas in talairach space as the template for normalizing
+        our image data.
 
     \end{itemize} \\ \hline
 
@@ -867,6 +879,15 @@ Width at Half maximum) Gaussian blur
 
 \subsection{Creating a Common GM Mask}%
 \label{sub:creating_a_common_gm_mask}
+
+Once the BOLD EPI image and the T1-weighted are aligned and spatially
+normalized, we will apply a GM mask to extract the functional
+connectivity information of only the GM region of the brain. For
+achieving this, we first need to create a common GM mask for all the
+subjects.
+
+The following is a brief summary of the tasks performed during this
+step:
 
 \begin{table}[H]
   \centering
