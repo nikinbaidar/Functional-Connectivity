@@ -1,0 +1,31 @@
+#! /bin/bash
+
+PROJECT_ROOT=/home/nikin/projects/functional_connectivity/preprocessed_data
+
+WORKING_DIR=${PROJECT_ROOT}/Aligned_Segmented/MDD
+
+pushd ${WORKING_DIR}
+
+TISSUES=(CSF WhiteMatter)
+
+pushd CSF
+
+for FILE in $(ls)
+do
+  SUBJECT_ID=$(echo $FILE | cut --characters 3-6)
+  mv c3${SUBJECT_ID}-T1-NoSkull_shft_alBOLDEC_shft.nii \
+    c3${SUBJECT_ID}-alBOLDEC_shft.nii
+done
+
+popd
+
+pushd WhiteMatter
+
+for FILE in $(ls)
+do
+  SUBJECT_ID=$(echo $FILE | cut --characters 3-6)
+  mv c2${SUBJECT_ID}-T1-NoSkull_shft_alBOLDEC_shft.nii \
+    c2${SUBJECT_ID}-alBOLDEC_shft.nii
+done
+
+popd
