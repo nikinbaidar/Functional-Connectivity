@@ -57,10 +57,8 @@ do
 
         pushd ${SUBJECT}
 
-         cp /home/nikin/projects/functional_connectivity/Subjects/HC/sub-0236/t1/defaced_mprage.nii
-         ./ANAT-0236.nii
-
-         # /home/nikin/projects/functional_connectivity/preprocessed_data/BOLD_fMRI_Data/HC
+        # Copy the T1 anatomical image 
+         cp $HOME/projects/functional_connectivity/Subjects/HC/sub-${SUBJECT_ID}/t1/defaced_mprage.nii ./ANAT-${SUBJECT_ID}.nii
 
         ###########################################################
         # Spatially normalize the anatomical dataset to MNI space #
