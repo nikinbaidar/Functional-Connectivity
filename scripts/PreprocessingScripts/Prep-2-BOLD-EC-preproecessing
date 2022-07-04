@@ -21,17 +21,17 @@ CATEGORIES=(HC MDD)
 # Move to the working directory
 if [ -d "${WORKING_DIR}" ]
 then
-    pushd ${WORKING_DIR}
+  pushd ${WORKING_DIR}
 else
-    echo "${WORKING_DIR}: doesn't exist"
-    exit 111;
+  echo "${WORKING_DIR}: doesn't exist"
+  exit 111;
 fi
 
 for CATEGORY in "${CATEGORIES[@]}"
 do
-    pushd ${CATEGORY}
-    for SUBJECT in $(ls *.nii)
-    do
+  pushd ${CATEGORY}
+  for SUBJECT in $(ls *.nii)
+  do
 
         # Did this part already
         # adjust the input-files to the standard path.
@@ -64,7 +64,7 @@ do
         rm -f ${SUBJECT_ID}-BOLD-EC*
 
         3dcalc -prefix ${SUBJECT_ID}-BOLD-EC-tmp \
-            -a ${SUBJECT} -expr 'a' -verbose
+          -a ${SUBJECT} -expr 'a' -verbose
 
         # Step 1:
 
@@ -75,7 +75,7 @@ do
         # the command:
 
         3dcalc -prefix ${SUBJECT_ID}-BOLD-EC1 \
-            -a ${SUBJECT_ID}-BOLD-EC-tmp+orig[5..$] -expr 'a'
+          -a ${SUBJECT_ID}-BOLD-EC-tmp+orig[5..$] -expr 'a'
 
         # Step 2:
         ## Despiking
@@ -87,53 +87,47 @@ do
 
         ## find the TR with least outliers
         base=$(cat outliers-BOLD-EC.1D | \
-            perl -0777an -F"\n" -e \
-            '$i=0;
-            $small=999999;
-            map {
-                /\s*(\d+)/;
-                if ($small > $1) {
+          perl -0777an -F"\n" -e \
+          '$i=0;
+                  $small=999999;
+                  map {
+                  /\s*(\d+)/;
+                  if ($small > $1) {
                     $small = $1;
                     $ind=$i;
-                };
-                $i++;
-            } @F;
-            print $ind')
+                  };
+                  $i++;
+                } @F;
+                print $ind')
 
-            echo The value for base is $base
-            sleep 5
-
-        #3dTshift -tpattern alt+z -prefix  ${subject}-BOLD-EC_tshift+orig ${subject}-BOLD-EC+orig
+                echo The value for base is $base
+                sleep 5
 
         # using the TR with least outliers as base for head motion correction and spatial normalization
         3dcalc -prefix ${SUBJECT_ID}-BOLD-EC-base \
-            -a "${SUBJECT_ID}-BOLD-EC+orig[${base}]" -expr 'a'
+          -a "${SUBJECT_ID}-BOLD-EC+orig[${base}]" -expr 'a'
 
         # slice timing and head motion correction
         # head motion parameters are stored in ${subject}-BOLD-EC-motion.1D
         # this is the same with running 3dTshift first and then use 3dvolreg it self.
         # however, due to the lack of slice scan order, we have to ignore this slice time step.
 
-        ###################################
-        # A file is missing for the next command
-        ###################################
-
         3dvolreg -verbose -tshift 0 -base $base -1Dfile ${SUBJECT_ID}-BOLD-EC-motion.1D \
-            -prefix ${SUBJECT_ID}-BOLD-EC-volreg ${SUBJECT_ID}-BOLD-EC+orig
-        #     rm -f ${SUBJECT_ID}-BOLD-EC+orig*
+          -prefix ${SUBJECT_ID}-BOLD-EC-volreg ${SUBJECT_ID}-BOLD-EC+orig
+                  #     rm -f ${SUBJECT_ID}-BOLD-EC+orig*
 
 
         ## brain mask of the subject
         3dAutomask -prefix ${SUBJECT_ID}-BOLD-EC-mask \
-            -dilate 1 ${SUBJECT_ID}-BOLD-EC-volreg+orig
+          -dilate 1 ${SUBJECT_ID}-BOLD-EC-volreg+orig
 
         # maskout the functional BOLD outside of the brain
         3dcalc -prefix ${SUBJECT_ID}-BOLD-EC-volreg-mask \
-            -a ${SUBJECT_ID}-BOLD-EC-volreg+orig \
-            -b ${SUBJECT_ID}-BOLD-EC-mask+orig -expr 'a*b'
+          -a ${SUBJECT_ID}-BOLD-EC-volreg+orig \
+          -b ${SUBJECT_ID}-BOLD-EC-mask+orig -expr 'a*b'
 
         gzip *K
+      done
+      popd
     done
-    popd
-done
 

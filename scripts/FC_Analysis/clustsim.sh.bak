@@ -1,0 +1,58 @@
+path='/home/namrata/practice/ROI'
+rtpath='/home/namrata/practice/Clustsim'
+
+#********************************************************************************************************#
+
+#subjest lists for HC
+HCsubjects='0236 0240 0244 0292 0294 0310 0312 0320 0322 0326 0338 0346 0353 0355 0359'
+
+#subjest lists for MDD
+MDDsubjects='0249 0259 0265 0267 0273 0277 0285 0287 0289 0299 0301 0319 0323 0331 0349'
+
+for subject in ${HCsubjects}
+do 
+	cd ${path}/HC/${subject}
+	cp -f ${subject}_rest_errt+tlrc* ${rtpath}/FC
+done
+
+for subject in ${MDDsubjects}	
+do
+	cd ${path}/MDD/${subject}
+	cp -f ${subject}_rest_errt+tlrc* ${rtpath}/FC
+done
+#***********************************************************************************************************#
+
+AllSubjs='0236 0240 0244 0292 0294 0310 0312 0320 0322 0326 0338 0346 0353 0355 0359 0249 0259 0265 0267 0273 0277 0285 0287 0289 0299 0301 0319 0323 0331 0349 '
+SubNum=30
+ROIs='r_rHipp r_cHipp l_vCa l_dCa'
+var=rest_errt
+dist=4.3
+pth1=.001
+pc=.05
+apath=${rtpath}/Alphasim
+
+for sub in ${AllSubjs}
+do
+  cd ${rtpath}/FC
+	rm 3dFWHMx.1D* 		
+	3dFWHMx -dset ${sub}_${var}+tlrc -automask -detrend -unif -acf > ${sub}-acf.1D
+done
+
+cd ${rtpath}/FWHM
+ln -s -b -f /${rtpath}/FC/*-acf.1D .
+cat *-acf.1D  > all-ACF-temp.txt
+cat all-ACF-temp.txt |awk 'NR%2==0' >all-ACF.txt
+rm all-AF-temp.txt
+a=(`1dsum all-ACF.txt`)
+ACFa=`ccalc ${a[0]}/${SubNum}`
+ACFb=`ccalc ${a[1]}/${SubNum}`
+ACFc=`ccalc ${a[2]}/${SubNum}`
+ACF=`ccalc ${a[3]}/${SubNum}`
+echo $ACF > avg-ACF.txt
+
+cd ${apath}
+rm -f AlphaSim_${var}_C_${pth1}
+
+3dClustSim -mask ${rtpath}/resampled_CommonGMmask+tlrc -acf ${ACFa} ${ACFb} ${ACFc} -iter 10000  -pthr ${pth1} -prefix  AlphaSim_${var}_C_${pth1}
+
+	

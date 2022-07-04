@@ -1,4 +1,4 @@
-# the script aims to generate the average GM mask from all the samples we use
+# The script aims to generate the average GM mask from all the samples we use
 # rather than using CommonGMmask.  however, if you want to use this script,
 # please check after you the result for it's effect, especially for the
 # parameter dilate and erode in 3dmask_tool command.

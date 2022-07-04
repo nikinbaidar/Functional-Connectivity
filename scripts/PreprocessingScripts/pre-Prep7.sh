@@ -18,7 +18,7 @@ then
 fi
 
 mkdir ${WORKING_DIR}
-pushd ${WORKING_DIR}
+pushd ${WORKING_DIR} > /dev/null
 
 # Create separate directories of HCs and MDDs
 CATEGORIES=(HC MDD)
@@ -26,7 +26,7 @@ CATEGORIES=(HC MDD)
 for CATEGORY in "${CATEGORIES[@]}"
 do
     mkdir ${CATEGORY}
-    pushd ${CATEGORY}
+    pushd ${CATEGORY} > /dev/null
 
     for SUBJECT in $(ls ${SUBJECTS}/${CATEGORY})
     do
@@ -35,7 +35,7 @@ do
         mkdir Covariates_removed-${SUBJECT_ID}
 
         # Copy the normalized data
-        cp ${NORMALIZED_DATA}/${CATEGORY}/NORM-${SUBJECT_ID}/${SUBJECT_ID}-BOLD-EC-volreg-Nwarp-blur6-lp-bp+tlrc.* \
+        cp ${NORMALIZED_DATA}/${CATEGORY}/NORM-${SUBJECT_ID}/${SUBJECT_ID}-BOLD-EC-volreg-Nwarp-blur6-lp-bp-resampled+tlrc.* \
         ./Covariates_removed-${SUBJECT_ID}/
 
         # Copy BOLD-EC-motion.1D
@@ -51,9 +51,9 @@ do
 
     done
 
-    popd
+    popd > /dev/null
 done
 
-popd
+popd > /dev/null
 
 tree ${WORKING_DIR}

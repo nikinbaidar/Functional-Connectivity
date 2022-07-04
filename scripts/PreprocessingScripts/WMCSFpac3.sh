@@ -2,7 +2,7 @@
 
 PROJECT_ROOT=${HOME}/projects/functional_connectivity/preprocessed_data/
 WORKING_DIR=${PROJECT_ROOT}/WM-CSF-pca3
-CATEGORIES=(MDD)
+CATEGORIES=(HC MDD)
 MARKERS=(c2 c3)
 TISSUES=(CSF WhiteMatter)
 

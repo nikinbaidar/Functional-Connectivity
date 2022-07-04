@@ -2,11 +2,11 @@
 
 SUBJECT_ID=0236
 
-rm -f ${SUBJECT_ID}_rest_errt+*
-rm *.err
-rm -f *-buc-errt*
+rm --force ${SUBJECT_ID}_rest_errt+*
+rm --force *.err
+rm --force *-buc-errt*
 3dDeconvolve                                                             \
--input 0236-BOLD-EC-volreg-Nwarp-blur6-lp-bp+tlrc.                       \
+-input ${SUBJECT_ID}-BOLD-EC-volreg-Nwarp-blur6-lp-bp-resampled+tlrc.    \
 -automask                                                                \
 -polort A -jobs 8 -float                                                 \
 -num_stimts 8                                                            \

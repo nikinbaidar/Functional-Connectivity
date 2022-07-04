@@ -57,6 +57,11 @@ do
 
         pushd ${SUBJECT}
 
+         cp /home/nikin/projects/functional_connectivity/Subjects/HC/sub-0236/t1/defaced_mprage.nii
+         ./ANAT-0236.nii
+
+         # /home/nikin/projects/functional_connectivity/preprocessed_data/BOLD_fMRI_Data/HC
+
         ###########################################################
         # Spatially normalize the anatomical dataset to MNI space #
         ###########################################################
@@ -112,7 +117,7 @@ do
         # Align SOURCE to BASE and save the transformation matrix for each
         # sub-brick into a 1D file. The cost function that defines the matching
         # between SOURCE and BASE is the lpa (Local Pearson Correlation Abs).
-        # Also comput a weight function using 3dAutomask alogrithm plus some
+        # Also compute a weight function using 3dAutomask alogrithm plus some
         # blurring of the base image.
 
         3dAllineate -prefix ${SUBJECT_ID}-T1_to_T1_Allineate          \
